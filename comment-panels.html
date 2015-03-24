@@ -1,0 +1,33 @@
+<section>
+  <ul>
+    <a href ng-click="commentpanel.selectTab(0, 'ViewComments')">
+      <li ng-class="{active:commentpanel.isSelected(0)}">
+        View Comments
+      </li>
+    </a>
+    <a href ng-click="commentpanel.selectTab(1, 'Add a Comment')">
+      <li ng-class="{active:commentpanel.isSelected(1)}">
+        Add Comment
+      </li>
+    </a>
+  </ul>
+
+  <div class="panel panel-primary" ng-show="commentpanel.isSelected(0)">
+    <div class="panel-heading">
+      <h1 class="panel-title">Listing of current comments</h3>
+    </div>
+    <div class="panel-body">
+      We got comments!
+    </div>
+  </div>
+
+  <div class="panel panel-info" ng-show="commentpanel.isSelected(1)">
+  {{person}} {{email}}<br />
+  {{message}}
+    <form id="comment" name="comment">
+      <input type="text" id="name" name="name" ng-model="person" placeholder="Name"></input>
+      <input type="email" id="email" name="email" ng-model="email" placeholder="Email"></input><br />
+      <textarea id="message" name="message" ng-model="message" placeholder="Enter your message for the happy couple"></textarea>
+    </form>
+  </div>
+</section>

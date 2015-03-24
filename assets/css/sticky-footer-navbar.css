@@ -1,0 +1,292 @@
+/*Sticky footer styles*/
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+*:before *:after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box; 
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  font-family: 'Lora', serif;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #C9D787;
+  font-size: 12pt;
+  color: #ffffff;
+}
+
+/*Sticky header styles*/
+body > .container {
+  padding: 60px 15px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+  color: #000000;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: center;
+}
+.left-align {
+  text-align: left;
+}
+
+code {
+  font-size: 80%;
+}
+
+.fancy {
+  font-family: 'Tangerine', cursive;
+}
+.lg {
+  font-size: 28pt;
+}
+.center {
+  text-align: center;
+}
+.page-header h1 {
+  font-size: 18pt;
+  margin-top: -15px;
+}
+.main-name {
+  display: block;
+  margin-top: -10px;
+}
+
+/*circle image badges*/
+.circle-badge-sm {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 50%;
+  background-image: url(../images/vancouverBadgeSM.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.badge-row {
+  margin: 20px 0 20px 0;
+}
+.badge-row a {
+  text-decoration: none;
+}
+.sub-circle-text {
+  text-align: center;
+  display: block;
+  padding: 15px 0 15px 0;
+  font-family: 'Tangerine', cursive;
+  color: #000000;
+  font-size: 22pt;
+  font-weight: bold;
+}
+.circle-badge-crested-lg {
+  text-align: center;
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  margin: 5px auto;
+  display: block;
+  border-radius: 50%;
+  background-image: url(../images/crestedButteBadgeLG.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.circle-badge-vancouver-lg {
+  text-align: center;
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  margin: 5px auto;
+  display: block;
+  border-radius: 50%;
+  background-image: url(../images/vancouverBadgeLG.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.circle-badge-wallowas-lg {
+  text-align: center;
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  margin: 5px auto;
+  display: block;
+  border-radius: 50%;
+  background-image: url(../images/wallowasBadgeLG.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.circle-badge-adams-lg {
+  text-align: center;
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  margin: 5px auto;
+  display: block;
+  border-radius: 50%;
+  background-image: url(../images/adamsBadgeLG.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.main-fifty {
+  display: block;
+  margin-bottom: 50px;
+  text-align: left;
+}
+#contact {
+}
+#contact input[type=text] {
+  padding: 5px;
+  margin: 10px auto 10px auto;
+  width: 80%;
+  display: block;
+}
+#contact input[type=email] {
+  padding: 5px;
+  margin: 10px auto 5px auto;
+  width: 80%;
+  display: block;
+}
+#contact textarea {
+  margin: 0;
+  padding: 5px;
+  margin: 10px auto 10px auto;
+  border: 1px solid #cccccc;
+  width: 80%;
+  height: auto;
+  border-radius: 3px;
+  display: block;
+}
+.float-left {
+  float: left;
+}
+.pointer {
+  cursor: pointer;
+}
+
+/*comment form styling*/
+#comment input[type=text] {
+  width: 95%;
+  display: block;
+  margin: 3px auto 3px auto;
+  padding: 3px;
+  text-align: center;
+}
+#comment input[type=email] {
+  width: 95%;
+  display: block;
+  margin: 3px auto 3px auto;
+  padding: 3px;
+  text-align: center;
+}
+#comment textarea {
+  width: 95%;
+  display: block;
+  margin: 3px auto 3px auto;
+  padding: 3px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .nav-right {
+    float: right;
+  }
+  .lg {
+    font-size: 45pt;
+  }
+  .page-header h1 {
+    font-size: 22pt;
+    margin-top: -15px;
+  }
+  .vertshrink {
+    margin-top: -20px;
+    margin-bottom: -5px;
+  }
+  .main-name {
+    display: inline-block;
+    padding: 0 10px 0 10px;
+  }
+  .badge-row a {
+    text-decoration: none;
+  }
+  .sub-circle-text {
+    display: inline-block;
+    font-size: 26pt;
+    font-weight: bold;
+    max-width: 33%;
+    padding: 0 15px 0 15px;
+    background-color: inherit;
+    transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+  }
+  .flower {
+    background-color: #ffffff;
+    background-image: url(../images/floralltblue.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-attachment: fixed;
+  }
+  .sub-circle-text:hover {
+    color: #ffffff;
+    background-color: #C9D787;
+  }
+  .main-fifty {
+    width: 48%;
+    max-width: 48%;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .main-clear {
+    display: inline-block;
+    width: 2%;
+    min-width: 2%;
+  }
+  .main-row {
+    width: 100%;
+  }
+  #contact {
+    width: 95%;
+    margin: 0px auto;
+    text-align: center;
+  }
+  #contact input[type=text] {
+    display: inline-block;
+    text-align: center;
+    width: 45%
+  }
+  #contact input[type=email] {
+    display: inline-block;
+    text-align: center;
+    width: 45%;
+  }
+  #contact textarea {
+    text-align: left;
+    margin: 5px auto 10px auto;
+    width: 90%;
+    height: 200px;
+  }
+  .existing-comments {
+    width: 70%;
+  }
+  .add-comment {
+    width: 25%;
+    float: right;
+  }
+}
