@@ -79,9 +79,29 @@
         </div>
 
         <div class="existing-comments">
-              <h1>Comments</h1>
             <div class="panel-body">
-              We got comments!
+              <?php
+                //connect to wedding db, look over list of comments to display
+              // $comments = mysql_fetch_assoc($result);
+              // while ($comments) {
+                print "<div class='comment-wrapper'>";
+                  print "<div class='comment-text'>";
+                    print "We're so happy for you all!";
+                  print "</div>";
+                  print "<div class='comment-author'>";
+                    print "Left By: Jackie Treehorn on March 24, 2015";
+                  print "</div>";
+                print "</div>";
+                print "<div class='comment-wrapper'>";
+                  print "<div class='comment-text'>";
+                    print "I'm not happy at all! Joe is a terrible human being!!!  Just kidding, he's a delight!  I've never met a more awesome human being in all my life.  Have I tested enough words yet?  This is really long now...";
+                  print "</div>";
+                  print "<div class='comment-author'>";
+                    print "Left By: Some dickhead on March 24, 2015";
+                  print "</div>";
+                print "</div>";
+              // }
+              ?>
             </div>
         </div>
 

@@ -5,7 +5,7 @@
 }
 *:before *:after {
   box-sizing: border-box;
-  -webkit-box-sizing: border-box; 
+  -webkit-box-sizing: border-box;
 }
 html {
   position: relative;
@@ -202,6 +202,21 @@ code {
   margin: 3px auto 3px auto;
   padding: 3px;
   text-align: center;
+}
+.comment-wrapper {
+  border: 1px solid #cccccc;
+  border-radius: 3px;
+  padding: 5px;
+  margin-bottom: 25px;
+}
+.comment-text {
+  text-align: left;
+  font-size: 14pt;
+}
+.comment-author {
+  font-style: italic;
+  text-align: right;
+  color: #a9a9a9;
 }
 
 @media (min-width: 768px) {
