@@ -7,22 +7,7 @@
 
         var master = this;
         $scope.person = '';
-        $scope.email = '';
         $scope.message = '';
-
-        (function panelSwitcher() {
-            master.tab = 0;
-            master.msg = 'View Comments';
-
-            master.selectTab = function(setTab, setMsg) {
-                master.tab = setTab;
-                master.msg = setMsg;
-            };
-
-            master.isSelected = function(checkTab) {
-                return master.tab === checkTab;
-            };
-        })();
+        $scope.email = '';
     });
-
 })();

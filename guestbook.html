@@ -80,6 +80,14 @@
 
         <div class="existing-comments">
             <div class="panel-body">
+              <div class="comment-wrapper">
+                <div class="comment-text">
+                  {{message}}
+                </div>
+                <div class="comment-author">
+                  Left By: <a href="mailto:{{email}}">{{person}}</a> on thisdate
+                </div>
+              </div>
               <?php
                 //connect to wedding db, look over list of comments to display
               // $comments = mysql_fetch_assoc($result);
