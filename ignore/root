@@ -1,0 +1,342 @@
+From MAILER-DAEMON@Wedding  Wed Mar 25 16:07:52 2015
+Return-Path: <MAILER-DAEMON@Wedding>
+Received: from localhost (localhost)
+	by Wedding (8.14.7/8.14.7) id t2PK7qak020743;
+	Wed, 25 Mar 2015 16:07:52 -0400
+Date: Wed, 25 Mar 2015 16:07:52 -0400
+From: Mail Delivery Subsystem <MAILER-DAEMON@Wedding>
+Message-Id: <201503252007.t2PK7qak020743@Wedding>
+To: <apache@Wedding>
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="t2PK7qak020743.1427314072/Wedding"
+Subject: Returned mail: see transcript for details
+Auto-Submitted: auto-generated (failure)
+
+This is a MIME-encapsulated message
+
+--t2PK7qak020743.1427314072/Wedding
+
+The original message was received at Wed, 25 Mar 2015 16:07:48 -0400
+from Wedding [127.0.0.1]
+
+   ----- The following addresses had permanent fatal errors -----
+<joedriscoll79@yahoo.com>
+    (reason: 501 Syntax error in parameters or arguments)
+
+   ----- Transcript of session follows -----
+... while talking to mta5.am0.yahoodns.net.:
+>>> MAIL From:<apache@Wedding> SIZE=572
+<<< 501 Syntax error in parameters or arguments
+501 5.6.0 Data format error
+
+--t2PK7qak020743.1427314072/Wedding
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; Wedding
+Received-From-MTA: DNS; Wedding
+Arrival-Date: Wed, 25 Mar 2015 16:07:48 -0400
+
+Final-Recipient: RFC822; joedriscoll79@yahoo.com
+Action: failed
+Status: 5.5.2
+Diagnostic-Code: SMTP; 501 Syntax error in parameters or arguments
+Last-Attempt-Date: Wed, 25 Mar 2015 16:07:52 -0400
+
+--t2PK7qak020743.1427314072/Wedding
+Content-Type: message/rfc822
+
+Return-Path: <apache@Wedding>
+Received: from Wedding (Wedding [127.0.0.1])
+	by Wedding (8.14.7/8.14.7) with ESMTP id t2PK7mak020741
+	for <joedriscoll79@yahoo.com>; Wed, 25 Mar 2015 16:07:48 -0400
+Received: (from apache@localhost)
+	by Wedding (8.14.7/8.14.7/Submit) id t2PK7mSq020738;
+	Wed, 25 Mar 2015 16:07:48 -0400
+Date: Wed, 25 Mar 2015 16:07:48 -0400
+Message-Id: <201503252007.t2PK7mSq020738@Wedding>
+To: joedriscoll79@yahoo.com
+Subject: Question about the wedding...
+X-PHP-Originating-Script: 0:contactus.php
+From: custcare-west@nordenterprises.com
+
+should go to yahoo?
+
+--t2PK7qak020743.1427314072/Wedding--
+
+From MAILER-DAEMON@Wedding  Wed Mar 25 16:08:33 2015
+Return-Path: <MAILER-DAEMON@Wedding>
+Received: from localhost (localhost)
+	by Wedding (8.14.7/8.14.7) id t2PK8XsU020751;
+	Wed, 25 Mar 2015 16:08:33 -0400
+Date: Wed, 25 Mar 2015 16:08:33 -0400
+From: Mail Delivery Subsystem <MAILER-DAEMON@Wedding>
+Message-Id: <201503252008.t2PK8XsU020751@Wedding>
+To: <apache@Wedding>
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="t2PK8XsU020751.1427314113/Wedding"
+Subject: Returned mail: see transcript for details
+Auto-Submitted: auto-generated (failure)
+
+This is a MIME-encapsulated message
+
+--t2PK8XsU020751.1427314113/Wedding
+
+The original message was received at Wed, 25 Mar 2015 16:08:32 -0400
+from Wedding [127.0.0.1]
+
+   ----- The following addresses had permanent fatal errors -----
+<joedriscoll79@yahoo.com>
+    (reason: 501 Syntax error in parameters or arguments)
+
+   ----- Transcript of session follows -----
+... while talking to mta7.am0.yahoodns.net.:
+>>> MAIL From:<apache@Wedding> SIZE=572
+<<< 501 Syntax error in parameters or arguments
+501 5.6.0 Data format error
+
+--t2PK8XsU020751.1427314113/Wedding
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; Wedding
+Received-From-MTA: DNS; Wedding
+Arrival-Date: Wed, 25 Mar 2015 16:08:32 -0400
+
+Final-Recipient: RFC822; joedriscoll79@yahoo.com
+Action: failed
+Status: 5.5.2
+Diagnostic-Code: SMTP; 501 Syntax error in parameters or arguments
+Last-Attempt-Date: Wed, 25 Mar 2015 16:08:33 -0400
+
+--t2PK8XsU020751.1427314113/Wedding
+Content-Type: message/rfc822
+
+Return-Path: <apache@Wedding>
+Received: from Wedding (Wedding [127.0.0.1])
+	by Wedding (8.14.7/8.14.7) with ESMTP id t2PK8WsU020749
+	for <joedriscoll79@yahoo.com>; Wed, 25 Mar 2015 16:08:32 -0400
+Received: (from apache@localhost)
+	by Wedding (8.14.7/8.14.7/Submit) id t2PK8WYF020740;
+	Wed, 25 Mar 2015 16:08:32 -0400
+Date: Wed, 25 Mar 2015 16:08:32 -0400
+Message-Id: <201503252008.t2PK8WYF020740@Wedding>
+To: joedriscoll79@yahoo.com
+Subject: Question about the wedding...
+X-PHP-Originating-Script: 0:contactus.php
+From: custcare-west@nordenterprises.com
+
+should go to yahoo?
+
+--t2PK8XsU020751.1427314113/Wedding--
+
+From MAILER-DAEMON@Wedding  Wed Mar 25 16:14:29 2015
+Return-Path: <MAILER-DAEMON@Wedding>
+Received: from localhost (localhost)
+	by Wedding (8.14.7/8.14.7) id t2PKESIb020785;
+	Wed, 25 Mar 2015 16:14:28 -0400
+Date: Wed, 25 Mar 2015 16:14:28 -0400
+From: Mail Delivery Subsystem <MAILER-DAEMON@Wedding>
+Message-Id: <201503252014.t2PKESIb020785@Wedding>
+To: <apache@Wedding>
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="t2PKESIb020785.1427314468/Wedding"
+Subject: Returned mail: see transcript for details
+Auto-Submitted: auto-generated (failure)
+
+This is a MIME-encapsulated message
+
+--t2PKESIb020785.1427314468/Wedding
+
+The original message was received at Wed, 25 Mar 2015 16:14:28 -0400
+from Wedding [127.0.0.1]
+
+   ----- The following addresses had permanent fatal errors -----
+<joedriscoll79@yahoo.com>
+    (reason: 501 Syntax error in parameters or arguments)
+
+   ----- Transcript of session follows -----
+... while talking to mta6.am0.yahoodns.net.:
+>>> MAIL From:<apache@Wedding> SIZE=600
+<<< 501 Syntax error in parameters or arguments
+501 5.6.0 Data format error
+
+--t2PKESIb020785.1427314468/Wedding
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; Wedding
+Received-From-MTA: DNS; Wedding
+Arrival-Date: Wed, 25 Mar 2015 16:14:28 -0400
+
+Final-Recipient: RFC822; joedriscoll79@yahoo.com
+Action: failed
+Status: 5.5.2
+Diagnostic-Code: SMTP; 501 Syntax error in parameters or arguments
+Last-Attempt-Date: Wed, 25 Mar 2015 16:14:28 -0400
+
+--t2PKESIb020785.1427314468/Wedding
+Content-Type: message/rfc822
+
+Return-Path: <apache@Wedding>
+Received: from Wedding (Wedding [127.0.0.1])
+	by Wedding (8.14.7/8.14.7) with ESMTP id t2PKERIb020783
+	for <joedriscoll79@yahoo.com>; Wed, 25 Mar 2015 16:14:28 -0400
+Received: (from apache@localhost)
+	by Wedding (8.14.7/8.14.7/Submit) id t2PKERe5020780;
+	Wed, 25 Mar 2015 16:14:27 -0400
+Date: Wed, 25 Mar 2015 16:14:27 -0400
+Message-Id: <201503252014.t2PKERe5020780@Wedding>
+To: joedriscoll79@yahoo.com
+Subject: Question about the wedding...
+X-PHP-Originating-Script: 0:contactus.php
+From: custcare-se@nordenterprises.com
+
+Tom brady will get you good-ass gifts! invite me!
+
+--t2PKESIb020785.1427314468/Wedding--
+
+From MAILER-DAEMON@Wedding  Wed Mar 25 17:28:25 2015
+Return-Path: <MAILER-DAEMON@Wedding>
+Received: from localhost (localhost)
+	by Wedding (8.14.7/8.14.7) id t2PLSP4e022156;
+	Wed, 25 Mar 2015 17:28:25 -0400
+Date: Wed, 25 Mar 2015 17:28:25 -0400
+From: Mail Delivery Subsystem <MAILER-DAEMON@Wedding>
+Message-Id: <201503252128.t2PLSP4e022156@Wedding>
+To: <apache@Wedding>
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="t2PLSP4e022156.1427318905/Wedding"
+Subject: Returned mail: see transcript for details
+Auto-Submitted: auto-generated (failure)
+
+This is a MIME-encapsulated message
+
+--t2PLSP4e022156.1427318905/Wedding
+
+The original message was received at Wed, 25 Mar 2015 17:28:24 -0400
+from Wedding [127.0.0.1]
+
+   ----- The following addresses had permanent fatal errors -----
+<joedriscoll79@gmail.com>
+    (reason: 550-5.7.1 Unauthenticated email from yahoo.com is not accepted due to domain's)
+
+   ----- Transcript of session follows -----
+... while talking to gmail-smtp-in.l.google.com.:
+>>> DATA
+<<< 550-5.7.1 Unauthenticated email from yahoo.com is not accepted due to domain's
+<<< 550-5.7.1 DMARC policy. Please contact administrator of yahoo.com domain if
+<<< 550-5.7.1 this was a legitimate mail. Please visit
+<<< 550-5.7.1 http://support.google.com/mail/answer/2451690 to learn about DMARC
+<<< 550 5.7.1 initiative. f194si3342037qhc.71 - gsmtp
+554 5.0.0 Service unavailable
+
+--t2PLSP4e022156.1427318905/Wedding
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; Wedding
+Received-From-MTA: DNS; Wedding
+Arrival-Date: Wed, 25 Mar 2015 17:28:24 -0400
+
+Final-Recipient: RFC822; joedriscoll79@gmail.com
+Action: failed
+Status: 5.7.1
+Remote-MTA: DNS; gmail-smtp-in.l.google.com
+Diagnostic-Code: SMTP; 550-5.7.1 Unauthenticated email from yahoo.com is not accepted due to domain's
+Last-Attempt-Date: Wed, 25 Mar 2015 17:28:25 -0400
+
+--t2PLSP4e022156.1427318905/Wedding
+Content-Type: message/rfc822
+
+Return-Path: <apache@Wedding>
+Received: from Wedding (Wedding [127.0.0.1])
+	by Wedding (8.14.7/8.14.7) with ESMTP id t2PLSN4e022154
+	for <joedriscoll79@gmail.com>; Wed, 25 Mar 2015 17:28:24 -0400
+Received: (from apache@localhost)
+	by Wedding (8.14.7/8.14.7/Submit) id t2PLSNLw022135;
+	Wed, 25 Mar 2015 17:28:23 -0400
+Date: Wed, 25 Mar 2015 17:28:23 -0400
+Message-Id: <201503252128.t2PLSNLw022135@Wedding>
+To: joedriscoll79@gmail.com
+Subject: Question about the wedding...
+X-PHP-Originating-Script: 0:contactus.php
+From: joedriscoll79@yahoo.com
+
+I'm sending this to ask for your help...
+
+--t2PLSP4e022156.1427318905/Wedding--
+
+From MAILER-DAEMON@Wedding  Wed Mar 25 17:32:43 2015
+Return-Path: <MAILER-DAEMON@Wedding>
+Received: from localhost (localhost)
+	by Wedding (8.14.7/8.14.7) id t2PLWgul022177;
+	Wed, 25 Mar 2015 17:32:42 -0400
+Date: Wed, 25 Mar 2015 17:32:42 -0400
+From: Mail Delivery Subsystem <MAILER-DAEMON@Wedding>
+Message-Id: <201503252132.t2PLWgul022177@Wedding>
+To: <apache@Wedding>
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="t2PLWgul022177.1427319162/Wedding"
+Subject: Returned mail: see transcript for details
+Auto-Submitted: auto-generated (failure)
+
+This is a MIME-encapsulated message
+
+--t2PLWgul022177.1427319162/Wedding
+
+The original message was received at Wed, 25 Mar 2015 17:32:42 -0400
+from Wedding [127.0.0.1]
+
+   ----- The following addresses had permanent fatal errors -----
+<joedriscoll79@gmail.com>
+    (reason: 550-5.7.1 Unauthenticated email from yahoo.com is not accepted due to domain's)
+
+   ----- Transcript of session follows -----
+... while talking to gmail-smtp-in.l.google.com.:
+>>> DATA
+<<< 550-5.7.1 Unauthenticated email from yahoo.com is not accepted due to domain's
+<<< 550-5.7.1 DMARC policy. Please contact administrator of yahoo.com domain if
+<<< 550-5.7.1 this was a legitimate mail. Please visit
+<<< 550-5.7.1 http://support.google.com/mail/answer/2451690 to learn about DMARC
+<<< 550 5.7.1 initiative. g83si3359151qhc.59 - gsmtp
+554 5.0.0 Service unavailable
+
+--t2PLWgul022177.1427319162/Wedding
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; Wedding
+Received-From-MTA: DNS; Wedding
+Arrival-Date: Wed, 25 Mar 2015 17:32:42 -0400
+
+Final-Recipient: RFC822; joedriscoll79@gmail.com
+Action: failed
+Status: 5.7.1
+Remote-MTA: DNS; gmail-smtp-in.l.google.com
+Diagnostic-Code: SMTP; 550-5.7.1 Unauthenticated email from yahoo.com is not accepted due to domain's
+Last-Attempt-Date: Wed, 25 Mar 2015 17:32:42 -0400
+
+--t2PLWgul022177.1427319162/Wedding
+Content-Type: message/rfc822
+
+Return-Path: <apache@Wedding>
+Received: from Wedding (Wedding [127.0.0.1])
+	by Wedding (8.14.7/8.14.7) with ESMTP id t2PLWgul022175
+	for <joedriscoll79@gmail.com>; Wed, 25 Mar 2015 17:32:42 -0400
+Received: (from apache@localhost)
+	by Wedding (8.14.7/8.14.7/Submit) id t2PLWgrA022174;
+	Wed, 25 Mar 2015 17:32:42 -0400
+Date: Wed, 25 Mar 2015 17:32:42 -0400
+Message-Id: <201503252132.t2PLWgrA022174@Wedding>
+To: joedriscoll79@gmail.com
+Subject: Question about the wedding...
+X-PHP-Originating-Script: 0:contactus.php
+MIME-Version: 1.0
+Content-type: text/html; charset=iso-8859-1
+From: <joedriscoll79@yahoo.com>
+
+i want this to work...
+
+--t2PLWgul022177.1427319162/Wedding--
+

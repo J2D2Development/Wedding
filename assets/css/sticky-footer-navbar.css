@@ -304,4 +304,7 @@ code {
     width: 25%;
     float: right;
   }
+  #joe-title, #ash-title, #and-title {
+    visibility: hidden;
+  }
 }

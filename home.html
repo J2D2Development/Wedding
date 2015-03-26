@@ -37,7 +37,7 @@
             <span class="icon-bar"></span>
           </button>
           <div class="navbar-brand circle-badge-sm"></div>
-          <a class="navbar-brand fancy" href="#">Ashley & Joseph</a>
+          <a class="navbar-brand fancy" href="home.html">Ashley & Joseph</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse nav-right">
           <ul class="nav navbar-nav">
@@ -56,9 +56,9 @@
         <h1>Together with their families</h1>
       </div>
       <p class="fancy lg">
-        <div class='main-name fancy lg'>Joseph Charles Driscoll</div>
-        <div class='main-name fancy lg'>&nbsp;&</div>
-        <div class='main-name fancy lg'>Ashley Owen Boyle</div>
+        <div class='main-name fancy lg' id="joe-title">Joseph Charles Driscoll</div>
+        <div class='main-name fancy lg' id="and-title">&</div>
+        <div class='main-name fancy lg' id="ash-title">Ashley Owen Boyle</div>
       </p>
         <p>Request your presence at the ceremony & celebration of their marriage.<br />Saturday, September 12, 2015 at Bladberry Farm in Portland, Oregon</p>
         <div class="badge-row">
@@ -125,10 +125,16 @@
     <script src="assets/js/ie10-bug-workaround.js"></script>
     <script>
     $(document).ready(function() {
-        function picFader() {
-
-        }
-    })
+        var timer0 = setTimeout(function() {
+          $('#joe-title').fadeIn(1000).css('visibility', 'visible');
+        }, 1000);
+        var timer1 = setTimeout(function() {
+          $('#and-title').fadeIn(1000).css('visibility', 'visible');
+        }, 2000);
+        var timer2 = setTimeout(function() {
+          $('#ash-title').fadeIn(1000).css('visibility', 'visible');
+        }, 3000);
+    });
     </script>
   </body>
 </html>
