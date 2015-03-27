@@ -304,7 +304,7 @@ code {
     width: 25%;
     float: right;
   }
-  #joe-title, #ash-title, #and-title {
-    visibility: hidden;
+  #joe-title, #ash-title, #and-title, #request-text, #badge-row, #final-fade {
+    opacity: 0.0;
   }
 }
