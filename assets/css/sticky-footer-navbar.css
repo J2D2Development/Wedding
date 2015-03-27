@@ -218,6 +218,60 @@ code {
   text-align: right;
   color: #a9a9a9;
 }
+.form-center {
+  border-radius: 3px;
+  border: 1px solid #bce8f1;
+  padding: 15px;
+  width: 50%;
+/*  display: inline-block;*/
+  text-align: left;
+  font-size: 12pt;
+  margin: 20px auto 20px auto;
+  background-color: #d9edf7;
+}
+.form-center input[type=text] {
+  width: 98%;
+  display: block;
+  margin: 1px auto 20px auto;
+  padding: 5px;
+}
+.form-center input[type=email] {
+  width: 98%;
+  display: block;
+  margin: 1px auto 20px auto;
+  padding: 5px;
+}
+.form-center input[type=radio] {
+  margin: 1px auto 20px auto;
+  padding: 5px;
+}
+.form-center select {
+  margin: 1px auto 20px auto;
+  padding: 5px;
+}
+.form-center textarea {
+  width: 98%;
+  display: block;
+  margin: 1px auto 20px auto;
+  padding: 3px;
+}
+#yes-response, #no-response {
+  display: none;
+}
+.positive, .negative {
+  font-size: 16pt;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.positive {
+  border-top: 1px solid green;
+  border-bottom: 1px solid green;
+}
+.negative {
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+}
 
 @media (min-width: 768px) {
   .nav-right {
