@@ -4,8 +4,44 @@
 		"selected_items":
 		[
 			[
-				"fade",
-				"fadeTo"
+				"font-s",
+				"font-style"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"op",
+				"option	Tag"
+			],
+			[
+				"typ",
+				"typeof"
+			],
+			[
+				"str",
+				"strArr"
+			],
+			[
+				"vowel",
+				"vowelArr"
+			],
+			[
+				"new",
+				"newArray"
+			],
+			[
+				"find",
+				"findLongest"
+			],
+			[
+				"word",
+				"wordArray"
 			],
 			[
 				"vis",
@@ -40,10 +76,6 @@
 				"style	Attr"
 			],
 			[
-				"fon",
-				"font-weight"
-			],
-			[
 				"font",
 				"font-size"
 			],
@@ -74,10 +106,6 @@
 			[
 				"bac",
 				"background-attachment"
-			],
-			[
-				"ba",
-				"background-repeat"
 			],
 			[
 				"backg",
@@ -268,11 +296,35 @@
 	"buffers":
 	[
 		{
-			"file": "/C/xampp/htdocs/javascript-koans-more/koans/AboutApplyingWhatWeHaveLearnt.js",
+			"file": "/C/xampp/htdocs/Wedding/rsvp.html",
 			"settings":
 			{
-				"buffer_size": 3967,
+				"buffer_size": 6547,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/Wedding/details.html",
+			"settings":
+			{
+				"buffer_size": 8111,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/Wedding/assets/css/sticky-footer-navbar.css",
+			"settings":
+			{
+				"buffer_size": 6794,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/xampp/htdocs/Wedding/assets/css/bootstrap.css",
+			"settings":
+			{
+				"buffer_size": 141867,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -308,27 +360,24 @@
 	},
 	"file_history":
 	[
-		"/C/xampp/htdocs/Wedding/assets/css/bootstrap.css",
-		"/C/xampp/htdocs/Wedding/assets/css/sticky-footer-navbar.css",
-		"/C/xampp/htdocs/Wedding/assets/js/commentApp.js",
-		"/C/xampp/htdocs/Wedding/contactus.php",
-		"/C/xampp/htdocs/Wedding/guestbook.html",
-		"/C/xampp/htdocs/Wedding/home.html",
-		"/C/xampp/htdocs/javascript-koans-more/moreJSkoans.sublime-project",
-		"/C/xampp/htdocs/javascript-koans-more/moreJSkoans.sublime-workspace",
 		"/C/Users/joedriscoll79/Documents/2011passwords.txt",
+		"/C/xampp/htdocs/jsPractice/functionsPractice2015-03-24.html",
+		"/C/xampp/htdocs/jsPractice/functions2015-03-24.js",
+		"/C/Users/joedriscoll79/Desktop/Programming Practice/sourcecodereview.txt",
+		"/C/xampp/htdocs/NordEnterprises/feature.html",
+		"/C/xampp/htdocs/NordEnterprises/photoalbums.php",
 		"/C/xampp/htdocs/Wedding/httpd.conf",
 		"/C/xampp/htdocs/Wedding/ignore/.htaccess",
 		"/C/xampp/htdocs/Wedding/ignore/php.conf",
 		"/C/xampp/htdocs/Wedding/ignore/README",
 		"/C/xampp/htdocs/Wedding/ignore/root",
 		"/C/xampp/htdocs/.htaccess",
-		"/C/Users/joedriscoll79/Desktop/Programming Practice/sourcecodereview.txt",
 		"/C/xampp/htdocs/Wedding/comment-panels.html",
 		"/C/xampp/htdocs/Wedding/details.html",
 		"/C/xampp/htdocs/Wedding/rsvp.html",
 		"/C/xampp/php/php.ini",
 		"/C/xampp/htdocs/Wedding/assets/js/angular.min.js",
+		"/C/xampp/htdocs/Wedding/contactus.php",
 		"/C/xampp/htdocs/Wedding/contact.html",
 		"/C/xampp/htdocs/Wedding/ignore/php.ini",
 		"/C/xampp/htdocs/Wedding/ignore/sendmail",
@@ -435,7 +484,10 @@
 		"/C/xampp/htdocs/NordDev/ckeditor/config.js",
 		"/C/Users/Jackie/Documents/UdacityWebDev/rot13jcd/main.py",
 		"/C/xampp/htdocs/NordDev/HelpSite/helpAds.php",
-		"/C/xampp/htdocs/NordDev/HelpSite/ad-panels.html"
+		"/C/xampp/htdocs/NordDev/HelpSite/ad-panels.html",
+		"/C/xampp/htdocs/NordDev/HelpSite/angular-route.min.js",
+		"/C/xampp/htdocs/NordDev/HelpSite/angular.min.js",
+		"/C/xampp/htdocs/NordDev/HelpSite/helpEvents.php"
 	],
 	"find":
 	{
@@ -453,6 +505,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"default",
+			"photo album",
+			"19",
 			"panel-title",
 			"mail",
 			"pull-left",
@@ -577,10 +632,7 @@
 			"min-hei",
 			"notices",
 			"css",
-			"loader",
-			"login_msg",
-			"tr",
-			"td"
+			"loader"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -611,32 +663,122 @@
 			[
 				{
 					"buffer": 0,
-					"file": "/C/xampp/htdocs/javascript-koans-more/koans/AboutApplyingWhatWeHaveLearnt.js",
+					"file": "/C/xampp/htdocs/Wedding/rsvp.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3967,
+						"buffer_size": 6547,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								6547,
+								6547
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3564.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/xampp/htdocs/Wedding/details.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8111,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4429,
+								4429
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2904.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/xampp/htdocs/Wedding/assets/css/sticky-footer-navbar.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6794,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5079,
+								5079
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5206.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/C/xampp/htdocs/Wedding/assets/css/bootstrap.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 141867,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								121344,
+								121322
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 124637.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				}
 			]
@@ -644,7 +786,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 22.0
+		"height": 31.0
 	},
 	"input":
 	{
@@ -681,7 +823,7 @@
 	"project": "wedding.sublime-project",
 	"replace":
 	{
-		"height": 40.0
+		"height": 58.0
 	},
 	"save_all_on_build": true,
 	"select_file":
