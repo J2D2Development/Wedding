@@ -360,6 +360,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/joedriscoll79/Downloads/phpMyAdmin-4.3.12-all-languages/phpMyAdmin-4.3.12-all-languages/README",
 		"/C/Users/joedriscoll79/Documents/2011passwords.txt",
 		"/C/xampp/htdocs/jsPractice/functionsPractice2015-03-24.html",
 		"/C/xampp/htdocs/jsPractice/functions2015-03-24.js",
@@ -486,8 +487,7 @@
 		"/C/xampp/htdocs/NordDev/HelpSite/helpAds.php",
 		"/C/xampp/htdocs/NordDev/HelpSite/ad-panels.html",
 		"/C/xampp/htdocs/NordDev/HelpSite/angular-route.min.js",
-		"/C/xampp/htdocs/NordDev/HelpSite/angular.min.js",
-		"/C/xampp/htdocs/NordDev/HelpSite/helpEvents.php"
+		"/C/xampp/htdocs/NordDev/HelpSite/angular.min.js"
 	],
 	"find":
 	{
@@ -685,7 +685,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3564.0,
+						"translation.y": 3489.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
