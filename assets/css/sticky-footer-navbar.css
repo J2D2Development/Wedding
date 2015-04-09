@@ -222,8 +222,7 @@ code {
   border-radius: 3px;
   border: 1px solid #bce8f1;
   padding: 15px;
-  width: 50%;
-/*  display: inline-block;*/
+  width: 100%;
   text-align: left;
   font-size: 12pt;
   margin: 20px auto 20px auto;
@@ -360,5 +359,41 @@ code {
   }
   #joe-title, #ash-title, #and-title, #request-text, #badge-row, #final-fade {
     opacity: 0.0;
+  }
+  .form-center {
+    border-radius: 3px;
+    border: 1px solid #bce8f1;
+    padding: 15px;
+    width: 50%;
+    text-align: left;
+    font-size: 12pt;
+    margin: 20px auto 20px auto;
+    background-color: #d9edf7;
+  }
+  .form-center input[type=text] {
+    width: 98%;
+    display: block;
+    margin: 1px auto 20px auto;
+    padding: 5px;
+  }
+  .form-center input[type=email] {
+    width: 98%;
+    display: block;
+    margin: 1px auto 20px auto;
+    padding: 5px;
+  }
+  .form-center input[type=radio] {
+    margin: 1px auto 20px auto;
+    padding: 5px;
+  }
+  .form-center select {
+    margin: 1px auto 20px auto;
+    padding: 5px;
+  }
+  .form-center textarea {
+    width: 98%;
+    display: block;
+    margin: 1px auto 20px auto;
+    padding: 3px;
   }
 }
