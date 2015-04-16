@@ -1,9 +1,9 @@
 <?php
 
 //local db
-$con = mysqli_connect('localhost', 'root', 'jcd2829', 'wedding');
-//production db - coming soon
-//$con = mysqli_connect();
+//$con = mysqli_connect('localhost', 'root', 'jcd2829', 'wedding');
+//production db
+$con = mysqli_connect('104.236.39.224:3306', 'root', 'aobjcdpdx', 'guestbook');
 
 if(mysqli_connect_errno()) {
     echo "Connection failure: " . mysqli_connect_error();
