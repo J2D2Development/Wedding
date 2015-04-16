@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html lang="en" ng-app="cApp">
+<html lang="en">
 
   <head>
     <meta charset="utf-8">
@@ -8,8 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <script src="assets/js/angular.min.js"></script>
-    <script src="assets/js/commentApp.js"></script>
     <link rel="icon" href="assets/images/favicon.ico">
 
     <title>Ash & Joe | Guestbook</title>
@@ -59,60 +57,58 @@
         <p class="fancy lg vertshrink">Our Guestbook</p>
       </div>
 
-      <div ng-controller="CommentsController">
-
         <div class="add-comment">
-          <div class="panel panel-primary">
+          <div id="comment-thanks" class="fancy lg">
+            Thank you for leaving a comment!
+            <img src="assets/images/joeashlaughingSM.jpg" alt="Lobster!">
+          </div>
+          <div id="comment-panel" class="panel panel-primary">
             <div class="panel-heading">
               <h1 class="panel-title">Add a Comment</h1>
             </div>
-              <form id="comment" name="comment">
-                <input type="text" id="name" name="name" ng-model="person" placeholder="Name"></input>
-                <input type="email" id="email" name="email" ng-model="email" placeholder="Email"></input>
-                <textarea id="message" name="message" ng-model="message" placeholder="Enter your message for the happy couple"></textarea>
+            <br />
+              <form id="comment" method="post" enctype="multipart/form-data" name="comment" target="_self" onsubmit="" action="submitcomment.php">
+                <input type="text" id="name" name="name" placeholder="Name"></input>
+                <input type="email" id="email" name="email" placeholder="Email"></input>
+                <textarea id="message" name="message" placeholder="Enter your message for the happy couple"></textarea>
                 <input class="btn btn-primary" type="submit" id="submit-comment" name="submit-comment" value="Submit"></input>
                 <input class="btn btn-danger" type="reset" id="reset-comment" name="reset-comment" value="Reset">
               </form>
           </div>
-<!--           Preview<br />
-            {{message}}<br />
-            From: {{person}}<br />
-            At: {{email}}<br /> -->
         </div>
 
         <div class="existing-comments">
-            <div class="panel-body">
-              <div class="comment-wrapper">
-                <div class="comment-text">
-                  {{message}}
-                </div>
-                <div class="comment-author">
-                  Left By: <a href="mailto:{{email}}">{{person}}</a> on thisdate
-                </div>
-              </div>
+
               <?php
-                //connect to wedding db, look over list of comments to display
-              // $comments = mysql_fetch_assoc($result);
-              // while ($comments) {
+              //local connection
+              $con = mysqli_connect('localhost', 'root', 'jcd2829', 'wedding');
+              //production database - coming soon
+              //$con = mysqli_connect();
+
+              $result = mysqli_query($con, "SELECT * FROM comments ORDER BY created_on DESC");
+              $num = mysqli_num_rows($result);
+
+              if($num == 0) {
                 print "<div class='comment-wrapper'>";
                   print "<div class='comment-text'>";
-                    print "We're so happy for you all!";
-                  print "</div>";
-                  print "<div class='comment-author'>";
-                    print "Left By: Jackie Treehorn on March 24, 2015";
+                  print "No comments yet- be the first to add one!";
                   print "</div>";
                 print "</div>";
-                print "<div class='comment-wrapper'>";
-                  print "<div class='comment-text'>";
-                    print "I'm not happy at all! Joe is a terrible human being!!!  Just kidding, he's a delight!  I've never met a more awesome human being in all my life.  Have I tested enough words yet?  This is really long now...";
+              } else {
+
+                while ($comments = mysqli_fetch_array($result)) {
+                  print "<div class='comment-wrapper'>";
+                    print "<div class='comment-text'>";
+                    print $comments['comment_message'];
+                    print "</div>";
+                    print "<div class='comment-author'>";
+                    print "Left By: " . $comments['comment_name'];
+                    print "</div>";
                   print "</div>";
-                  print "<div class='comment-author'>";
-                    print "Left By: Some dickhead on March 24, 2015";
-                  print "</div>";
-                print "</div>";
-              // }
+                }
+              }
               ?>
-            </div>
+
         </div>
 
       </div>
@@ -156,5 +152,37 @@
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-bug-workaround.js"></script>
+
+    <script>
+    $(document).ready(function() {
+      $('form').on('submit', function() {
+        $.post(
+            $(this).attr('action'),
+            $(this).serialize(),
+            function(response) {
+            },
+            'json'
+        );
+        var timer = setTimeout(reloadComments, 2000);
+        $('#comment-panel').fadeOut(500, function() {
+          $('#comment-thanks').fadeIn(500);
+        });
+        return false;
+      });
+
+      //function to reload blog entries after submission
+      function reloadComments() {
+        $.ajax({
+          type: 'GET',
+          cache: false,
+          url: 'reloadcomments.php',
+          success: function(data) {
+            $('.existing-comments').html(data);;
+          }
+        });
+      }
+    });
+    </script>
+
   </body>
 </html>

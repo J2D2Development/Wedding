@@ -196,6 +196,10 @@ code {
   padding: 3px;
   text-align: center;
 }
+#comment input[type=submit] {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
 #comment textarea {
   width: 95%;
   display: block;
@@ -204,10 +208,11 @@ code {
   text-align: center;
 }
 .comment-wrapper {
+  width: 100%;
   border: 1px solid #cccccc;
   border-radius: 3px;
   padding: 5px;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 .comment-text {
   text-align: left;
@@ -217,6 +222,33 @@ code {
   font-style: italic;
   text-align: right;
   color: #a9a9a9;
+}
+.existing-comments {
+  width: 100%;
+}
+#comment-thanks {
+  display: none;
+  font-size: 26pt;
+}
+#comment-thanks img {
+  display: none;
+}
+.rsvp-photos img {
+  display: inline-block;
+  width: 20%;
+  border-radius: 5px;
+}
+.form-submitted-msg {
+  display: none;
+  border-radius: 3px;
+  padding: 15px;
+  width: 100%;
+  text-align: center;
+  font-size: 12pt;
+  margin: 10px auto 20px auto;
+}
+.form-submitted-msg h3 {
+  margin-top: 0;
 }
 .form-center {
   border-radius: 3px;
@@ -351,11 +383,21 @@ code {
     height: 200px;
   }
   .existing-comments {
-    width: 70%;
+    width: 75%;
   }
   .add-comment {
     width: 25%;
     float: right;
+  }
+  #comment-thanks {
+    display: none;
+    font-size: 22pt;
+  }
+  #comment-thanks img {
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    margin: 15px auto 15px auto;
   }
   #joe-title, #ash-title, #and-title, #request-text, #badge-row, #final-fade {
     opacity: 0.0;
@@ -395,5 +437,22 @@ code {
     display: block;
     margin: 1px auto 20px auto;
     padding: 3px;
+  }
+  /*comment form styling*/
+  #comment input[type=text] {
+    margin: 5px auto 5px auto;
+  }
+  #comment input[type=email] {
+    margin: 5px auto 5px auto;
+  }
+  #comment textarea {
+    margin: 5px auto 5px auto;
+  }
+  .comment-wrapper {
+    width: 95%;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    padding: 5px;
+    margin-bottom: 25px;
   }
 }

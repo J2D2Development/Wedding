@@ -54,23 +54,27 @@
     <!-- Begin page content -->
     <div class="container-fluid center">
       <div class="page-header">
-        <p class="fancy lg vertshrink">RSVP</p>
+        <p id="rsvp-title" class="fancy lg vertshrink">RSVP</p>
       </div>
     </div>
 
-<!--     <div class="panel panel-info center">
-      <div class="panel-heading"> -->
-<!--         <h2 class="center">Can you join us?</h2> -->
-<!--       </div> -->
+    <div id="form-submitted-msg" class="form-submitted-msg">
+        <p>
+            <h3>Thank you for submitting your RSVP!</h3>
+            <em>If something changes and you need to update us, use the contact link or send Joe an email at joedriscoll79@gmail.com</em>
+        </p>
+        <div class="rsvp-photos">
+            <img src="assets/images/joeashlaughingSM.jpg" alt="Lobster!">
+            <img src="assets/images/joeashlaughingSM.jpg" alt="Lobster!">
+            <img src="assets/images/joeashlaughingSM.jpg" alt="Lobster!">
+            <img src="assets/images/joeashlaughingSM.jpg" alt="Lobster!">
+        </div>
+    </div>
 
-    <div class="form-center">
+    <div id="rsvp-form" class="form-center">
 
     <form action="https://docs.google.com/forms/d/1oV1Pamx504Ywrm6RQ6wVafLFsEPKnsVM6YNi24jtqT4/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
 
-<!--     <ol role="list" class="ss-question-list" style="padding-left: 0"> -->
-<!--     <div class="ss-form-question errorbox-good" role="listitem">
-    <div dir="ltr" class="ss-item ss-item-required ss-text">
-    <div class="ss-form-entry"> -->
     <label class="ss-q-item-label" for="entry_1372944958">
     <div class="ss-q-title">Your Name
     <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
@@ -79,50 +83,31 @@
     </label>
     <input type="text" name="entry.1372944958" value="" class="ss-q-short" id="entry_1372944958" dir="auto" aria-label="Your Name  " aria-required="true" required="" title="">
     <div class="error-message" id="1612956253_errorMessage"></div>
-<!--     </div></div></div> -->
 
-<!--     <div class="ss-form-question errorbox-good" role="listitem">
-    <div dir="ltr" class="ss-item ss-item-required ss-text">
-    <div class="ss-form-entry"> -->
     <label class="ss-q-item-label" for="entry_2143655528"><div class="ss-q-title">Your Email
     <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
     <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
     </label>
     <input type="text" name="entry.2143655528" value="" class="ss-q-short" id="entry_2143655528" dir="auto" aria-label="Your Email  " aria-required="true" required="" title="">
     <div class="error-message" id="1751590874_errorMessage"></div>
-<!--     </div></div></div> -->
 
-<!--     <div class="ss-form-question errorbox-good" role="listitem">
-    <div dir="ltr" class="ss-item ss-item-required ss-radio">
-    <div class="ss-form-entry"> -->
     <label class="ss-q-item-label" for="entry_28839094"><div class="ss-q-title">Can you join us?
     <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-<!--     <span class="ss-required-asterisk" aria-hidden="true">*&nbsp;&nbsp;</span> -->
     </div>
     </label>
-   <!--  <ul class="ss-choices" role="radiogroup" aria-label="Can you join us?  ">
-        <li class="ss-choice-item"> -->
         <label>
         <span class="ss-choice-item-control goog-inline-block">
         <input type="radio" name="entry.1715362024" value="Yes" id="group_1715362024_1" role="radio" class="ss-q-radio" aria-label="Yes" required="" aria-required="true">
         </span>
         <span class="ss-choice-label">Yes</span>
         </label>
-<!--         </li>
-        <li class="ss-choice-item"> -->
         <label>
         <span class="ss-choice-item-control goog-inline-block"><input type="radio" name="entry.1715362024" value="No" id="group_1715362024_2" role="radio" class="ss-q-radio" aria-label="No" required="" aria-required="true">
         </span>
         <span class="ss-choice-label">No</span>
         </label>
-<!--         </li>
-    </ul> -->
     <div class="error-message" id="28839094_errorMessage"></div>
-<!--     </div></div></div> -->
 
- <!--    <div class="ss-form-question errorbox-good" role="listitem">
-    <div dir="ltr" class="ss-item  ss-select">
-    <div class="ss-form-entry"> -->
     <div id="yes-response">
     <div class="positive">Awesome!  Can't wait to see you...<br />
     <small>Please fill in the rest of the form so we can get your info.</small>
@@ -239,6 +224,8 @@
 
     <script type="text/javascript">
     $(document).ready(function() {
+
+      //function to show yes or no specific content
       var attend;
       $('input[name="entry.1715362024"]').change(function() {
         attend = $('input[name="entry.1715362024"]:checked').val();
@@ -249,6 +236,23 @@
           $('#yes-response').hide();
           $('#no-response').slideDown();
         }
+      });
+
+      //function to prevent default google form re-routing
+      $('form').on('submit', function() {
+        $.post(
+            $(this).attr('action'),
+            $(this).serialize(),
+            function(response) {
+            },
+            'json'
+        );
+        window.scroll(0,0);
+        $('#rsvp-form').fadeOut(500, function() {
+            $('#form-submitted-msg').fadeIn(500);
+        });
+        $('#rsvp-title').html('Thank You!');
+        return false;
       });
     });
     </script>
