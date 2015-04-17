@@ -53,7 +53,9 @@
 
     <!-- Begin page content -->
     <div class="container-fluid center">
+      <div id="skip" class="skip">Skip Intro</div>
       <div class="page-header">
+
         <h1>Together with their families</h1>
       </div>
       <p class="fancy lg">
@@ -129,6 +131,11 @@
     <script src="assets/js/ie10-bug-workaround.js"></script>
     <script>
     $(document).ready(function() {
+      $('#skip').on('click', function() {
+        $('#joe-title, #and-title, #ash-title, #request-text, #badge-row, #final-fade').css('opacity', '1.0');
+        $(this).hide();
+      });
+
         $('#joe-title').fadeTo(1000, 1.0, function() {
           $('#and-title').fadeTo(1000, 1.0, function() {
             $('#ash-title').fadeTo(1000, 1.0, function() {
@@ -138,6 +145,7 @@
                 }, 1500);
                 var timer1 = setTimeout(function() {
                   $('#final-fade').fadeTo(2500, 1.0);
+                  $('.skip').fadeOut(2000);
                 }, 3000);
               });
             });

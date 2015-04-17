@@ -221,7 +221,9 @@ code {
 .comment-author {
   font-style: italic;
   text-align: right;
-  color: #a9a9a9;
+  font-size: 10pt;
+  margin-top: 5px;
+  color: #666666;
 }
 .existing-comments {
   width: 100%;
@@ -302,6 +304,18 @@ code {
 .negative {
   border-top: 1px solid red;
   border-bottom: 1px solid red;
+  padding: 10px 0 10px 0;
+}
+.neg-image {
+  text-align: center;
+  margin: 10px 0 10px 0;
+}
+.neg-image img {
+   border-radius: 5px;
+   width: 150px;
+}
+.skip {
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -454,5 +468,24 @@ code {
     border-radius: 3px;
     padding: 5px;
     margin-bottom: 25px;
+  }
+  .neg-image img {
+     width: 300px;
+  }
+  .skip {
+    right: 0;
+    top: 75;
+    margin-right: 15px;
+    position: absolute;
+    display: inline-block;
+    background-color: #cccccc;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .skip:hover {
+    background-color: #a9a9a9;
   }
 }

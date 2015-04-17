@@ -60,7 +60,7 @@
         <div class="add-comment">
           <div id="comment-thanks" class="fancy lg">
             Thank you for leaving a comment!
-            <img src="assets/images/joeashlaughingSM.jpg" alt="Lobster!">
+            <img src="assets/images/pcg.jpg" alt="Lobster!">
           </div>
           <div id="comment-panel" class="panel panel-primary">
             <div class="panel-heading">
@@ -68,9 +68,9 @@
             </div>
             <br />
               <form id="comment" method="post" enctype="multipart/form-data" name="comment" target="_self" onsubmit="" action="submitcomment.php">
-                <input type="text" id="name" name="name" placeholder="Name"></input>
+                <input type="text" id="name" name="name" placeholder="Name" required></input>
                 <input type="email" id="email" name="email" placeholder="Email"></input>
-                <textarea id="message" name="message" placeholder="Enter your message for the happy couple"></textarea>
+                <textarea id="message" name="message" placeholder="Enter your message for the happy couple" required></textarea>
                 <input class="btn btn-primary" type="submit" id="submit-comment" name="submit-comment" value="Submit"></input>
                 <input class="btn btn-danger" type="reset" id="reset-comment" name="reset-comment" value="Reset">
               </form>
@@ -80,10 +80,7 @@
         <div class="existing-comments">
 
               <?php
-              //local connection
-              //$con = mysqli_connect('localhost', 'root', 'jcd2829', 'wedding');
-              //production database
-              $con = mysqli_connect('104.236.39.224:3306', 'root', 'aobjcdpdx', 'guestbook');
+              include_once "db_connect.php";
 
               $result = mysqli_query($con, "SELECT * FROM comments ORDER BY created_on DESC");
               if($result) {
@@ -98,12 +95,13 @@
                 } else {
 
                   while ($comments = mysqli_fetch_array($result)) {
+                    $format_date = substr($comments['created_on'], 0, 10);
                     print "<div class='comment-wrapper'>";
                       print "<div class='comment-text'>";
                       print $comments['comment_message'];
                       print "</div>";
                       print "<div class='comment-author'>";
-                      print "Left By: " . $comments['comment_name'];
+                      print "Left By: " . $comments['comment_name'] . " on " . $format_date;
                       print "</div>";
                     print "</div>";
                   }
@@ -159,6 +157,7 @@
 
     <script>
     $(document).ready(function() {
+
       $('form').on('submit', function() {
         $.post(
             $(this).attr('action'),
