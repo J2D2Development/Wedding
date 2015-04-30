@@ -340,3 +340,76 @@ i want this to work...
 
 --t2PLWgul022177.1427319162/Wedding--
 
+From MAILER-DAEMON@Wedding  Thu Apr 30 16:31:31 2015
+Return-Path: <MAILER-DAEMON@Wedding>
+Received: from localhost (localhost)
+	by Wedding (8.14.7/8.14.7) id t3UKVVKU001946;
+	Thu, 30 Apr 2015 16:31:31 -0400
+Date: Thu, 30 Apr 2015 16:31:31 -0400
+From: Mail Delivery Subsystem <MAILER-DAEMON@Wedding>
+Message-Id: <201504302031.t3UKVVKU001946@Wedding>
+To: <apache@Wedding>
+MIME-Version: 1.0
+Content-Type: multipart/report; report-type=delivery-status;
+	boundary="t3UKVVKU001946.1430425891/Wedding"
+Subject: Returned mail: see transcript for details
+Auto-Submitted: auto-generated (failure)
+
+This is a MIME-encapsulated message
+
+--t3UKVVKU001946.1430425891/Wedding
+
+The original message was received at Thu, 30 Apr 2015 16:31:30 -0400
+from Wedding [127.0.0.1]
+
+   ----- The following addresses had permanent fatal errors -----
+<joedriscoll79@gmail.com>
+    (reason: 550-5.7.1 Unauthenticated email from yahoo.com is not accepted due to domain's)
+
+   ----- Transcript of session follows -----
+... while talking to gmail-smtp-in.l.google.com.:
+>>> DATA
+<<< 550-5.7.1 Unauthenticated email from yahoo.com is not accepted due to domain's
+<<< 550-5.7.1 DMARC policy. Please contact administrator of yahoo.com domain if
+<<< 550-5.7.1 this was a legitimate mail. Please visit
+<<< 550-5.7.1 http://support.google.com/mail/answer/2451690 to learn about DMARC
+<<< 550 5.7.1 initiative. po3si5792964vdb.0 - gsmtp
+554 5.0.0 Service unavailable
+
+--t3UKVVKU001946.1430425891/Wedding
+Content-Type: message/delivery-status
+
+Reporting-MTA: dns; Wedding
+Received-From-MTA: DNS; Wedding
+Arrival-Date: Thu, 30 Apr 2015 16:31:30 -0400
+
+Final-Recipient: RFC822; joedriscoll79@gmail.com
+Action: failed
+Status: 5.7.1
+Remote-MTA: DNS; gmail-smtp-in.l.google.com
+Diagnostic-Code: SMTP; 550-5.7.1 Unauthenticated email from yahoo.com is not accepted due to domain's
+Last-Attempt-Date: Thu, 30 Apr 2015 16:31:31 -0400
+
+--t3UKVVKU001946.1430425891/Wedding
+Content-Type: message/rfc822
+
+Return-Path: <apache@Wedding>
+Received: from Wedding (Wedding [127.0.0.1])
+	by Wedding (8.14.7/8.14.7) with ESMTP id t3UKVUKU001944
+	for <joedriscoll79@gmail.com>; Thu, 30 Apr 2015 16:31:30 -0400
+Received: (from apache@localhost)
+	by Wedding (8.14.7/8.14.7/Submit) id t3UKVUpC001941;
+	Thu, 30 Apr 2015 16:31:30 -0400
+Date: Thu, 30 Apr 2015 16:31:30 -0400
+Message-Id: <201504302031.t3UKVUpC001941@Wedding>
+To: joedriscoll79@gmail.com
+Subject: Question about the wedding...
+X-PHP-Originating-Script: 0:contactus.php
+MIME-Version: 1.0
+Content-type: text/html; charset=iso-8859-1
+From: <joedriscoll79@yahoo.com>
+
+Test on 4/30
+
+--t3UKVVKU001946.1430425891/Wedding--
+
