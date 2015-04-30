@@ -10,7 +10,7 @@
     <meta name="author" content="">
     <link rel="icon" href="assets/images/favicon.ico">
 
-    <title>Ash & Joe | Guestbook</title>
+    <title>Ash & Joe | Wedding!</title>
 
     <!-- Bootstrap core CSS and custom styles -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
@@ -24,7 +24,7 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body class="flower">
 
     <!-- Fixed navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
@@ -41,9 +41,9 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse nav-right">
           <ul class="nav navbar-nav">
-            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
             <li><a href="details.html">Details</a></li>
-            <li class="active"><a href="guestbook.html">Guestbook</a></li>
+            <li><a href="guestbook.html">Guestbook</a></li>
             <li data-toggle="modal" data-target="#myModal"><a class="pointer">Contact</a></li>
             <li><a href="rsvp.html">RSVP</a></li>
           </ul>
@@ -53,70 +53,45 @@
 
     <!-- Begin page content -->
     <div class="container-fluid center">
+      <div id="skip" class="skip">Skip Intro</div>
       <div class="page-header">
-        <p class="fancy lg vertshrink">Our Guestbook</p>
-      </div>
 
-        <div class="add-comment">
-          <div id="comment-thanks" class="fancy lg">
-            Thank you for leaving a comment!
-            <img src="assets/images/pcg.jpg" alt="Lobster!">
-          </div>
-          <div id="comment-panel" class="panel panel-primary">
-            <div class="panel-heading">
-              <h1 class="panel-title">Add a Comment</h1>
+        <h1>Together with their families</h1>
+      </div>
+      <p class="fancy lg">
+        <div class='main-name fancy lg' id="joe-title">Joseph Charles Driscoll</div>
+        <div class='main-name fancy lg' id="and-title">&</div>
+        <div class='main-name fancy lg' id="ash-title">Ashley Owen Boyle</div>
+      </p>
+
+        <p id="request-text">Request your presence at the ceremony & celebration of their marriage.<br />Saturday, September 12, 2015 at Bladberry Farm in Portland, Oregon</p>
+
+        <div class="badge-row" id="badge-row">
+          <a href="rsvp.html">
+            <div class="sub-circle-text">
+              <div class="circle-badge-crested-lg"></div>
+              Rsvp
             </div>
-            <br />
-              <form id="comment" method="post" enctype="multipart/form-data" name="comment" target="_self" onsubmit="" action="submitcomment.php">
-                <input type="text" id="name" name="name" placeholder="Name" required></input>
-                <input type="email" id="email" name="email" placeholder="Email"></input>
-                <textarea id="message" name="message" placeholder="Enter your message for the happy couple" required></textarea>
-                <input class="btn btn-primary" type="submit" id="submit-comment" name="submit-comment" value="Submit"></input>
-                <input class="btn btn-danger" type="reset" id="reset-comment" name="reset-comment" value="Reset">
-              </form>
-          </div>
+          </a>
+          <a href="details.html">
+            <div class="sub-circle-text">
+              <div class="circle-badge-adams-lg"></div>
+              Details
+            </div>
+          </a>
+          <a class="pointer" data-toggle="modal" data-target="#myModal">
+            <div class="sub-circle-text">
+              <div class="circle-badge-wallowas-lg"></div>
+              Contact
+            </div>
+          </a>
         </div>
 
-        <div class="existing-comments">
-
-              <?php
-              include_once "db_connect.php";
-
-              $result = mysqli_query($con, "SELECT * FROM comments ORDER BY created_on DESC");
-              if($result) {
-                $num = mysqli_num_rows($result);
-
-                if($num == 0) {
-                  print "<div class='comment-wrapper'>";
-                    print "<div class='comment-text'>";
-                    print "No comments yet- be the first to add one!";
-                    print "</div>";
-                  print "</div>";
-                } else {
-
-                  while ($comments = mysqli_fetch_array($result)) {
-                    $format_date = substr($comments['created_on'], 0, 10);
-                    print "<div class='comment-wrapper'>";
-                      print "<div class='comment-text'>";
-                      print $comments['comment_message'];
-                      print "</div>";
-                      print "<div class='comment-author'>";
-                      print "Left By: " . $comments['comment_name'] . " on " . $format_date;
-                      print "</div>";
-                    print "</div>";
-                  }
-                }
-              } else {
-                print "Error connecting to db - Sorry!" . mysqli_connect_error();
-              }
-              ?>
-
-        </div>
-
-      </div>
+      <p id="final-fade">Don't forget to <a href="guestbook.html">Sign Our Guestbook</a><br />
+      </p>
     </div>
 
-    <!-- Modal -->
+    <!-- Contact Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -154,38 +129,29 @@
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="assets/js/ie10-bug-workaround.js"></script>
-
     <script>
     $(document).ready(function() {
-
-      $('form').on('submit', function() {
-        $.post(
-            $(this).attr('action'),
-            $(this).serialize(),
-            function(response) {
-            },
-            'json'
-        );
-        var timer = setTimeout(reloadComments, 2000);
-        $('#comment-panel').fadeOut(500, function() {
-          $('#comment-thanks').fadeIn(500);
-        });
-        return false;
+      $('#skip').on('click', function() {
+        $('#joe-title, #and-title, #ash-title, #request-text, #badge-row, #final-fade').css('opacity', '1.0');
+        $(this).hide();
       });
 
-      //function to reload blog entries after submission
-      function reloadComments() {
-        $.ajax({
-          type: 'GET',
-          cache: false,
-          url: 'reloadcomments.php',
-          success: function(data) {
-            $('.existing-comments').html(data);;
-          }
+        $('#joe-title').fadeTo(1000, 1.0, function() {
+          $('#and-title').fadeTo(1000, 1.0, function() {
+            $('#ash-title').fadeTo(1000, 1.0, function() {
+              $('#request-text').fadeTo(1500, 1.0, function() {
+                var timer0 = setTimeout(function() {
+                  $('#badge-row').fadeTo(2000, 1.0);
+                }, 1500);
+                var timer1 = setTimeout(function() {
+                  $('#final-fade').fadeTo(2500, 1.0);
+                  $('.skip').fadeOut(2000);
+                }, 3000);
+              });
+            });
+          });
         });
-      }
-    });
+      });
     </script>
-
   </body>
 </html>
