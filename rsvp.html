@@ -189,24 +189,31 @@
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title fancy lg vertshrink" id="myModalLabel">Contact Us</h4>
-            <small>Questions?  Concerns?  Fill out the form below!</small>
-          </div>
-          <div class="modal-body">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title fancy lg vertshrink" id="myModalLabel">Contact Us</h4>
+              <small>Questions?  Concerns?  Fill out the form below!</small>
+            </div>
 
-            <form id="contact" name="contact" action="contactus.php" method="POST" novalidate>
-              <input type="text" id="name" name="name" placeholder="Name"></input>
-              <input type="email" id="email" name="email" placeholder="Email"></input>
-              <textarea id="message" name="message" placeholder="How can we help?"></textarea>
+              <div id="contact-thanks" class="center">
+                <p id="contact-results"></p>
+                <img id="hide-small" src="assets/images/joeashlaughingSM.jpg" alt="Ha Ha Ha" />
+              </div>
 
-                </div>
-          <div class="modal-footer">
-              <input class="btn btn-danger float-left" id="cancel" type="reset" value="Cancel" data-dismiss="modal"></button>
-              <input class="btn btn-success" id="submit" name="submit" type="submit" value="Contact Us"></button>
-            </form>
-          </div>
+            <div id="contact-form">
+              <div class="modal-body">
+                <form id="contact" name="contact" method="POST" target="_self" enctype="multipart/form-data" action="contactus.php" onsubmit="" novalidate>
+                  <input type="text" id="name" name="name" placeholder="Name"></input>
+                  <input type="email" id="email" name="email" placeholder="Email"></input>
+                  <textarea id="message" name="message" placeholder="How can we help?"></textarea>
+              </div>
+
+              <div class="modal-footer">
+                  <input class="btn btn-danger float-left" id="cancel" type="reset" value="Cancel" data-dismiss="modal"></button>
+                  <input class="btn btn-success" id="submit" name="submit" type="submit" value="Contact Us"></button>
+                </form>
+              </div>
+            </div>
         </div>
       </div>
     </div>
@@ -241,7 +248,7 @@
       });
 
       //function to prevent default google form re-routing
-      $('form').on('submit', function() {
+      $('#ss-form').on('submit', function() {
         $.post(
             $(this).attr('action'),
             $(this).serialize(),
@@ -256,6 +263,33 @@
         $('#rsvp-title').html('Thank You!');
         return false;
       });
+    });
+
+    //contact form submission
+    $('#contact').on('submit', function(e) {
+      e.preventDefault();
+
+      $.ajax({
+        type: 'post',
+        url: 'contactus.php',
+        data: $('#contact').serialize(),
+        success: function(result) {
+          $('#contact-form').fadeOut(500, function() {
+            $('#contact-results').html(result);
+            $('#contact-thanks').fadeIn(500);
+          });
+          var timerContact = setTimeout(function() {
+            $('#myModal').modal('hide');
+          }, 7000);
+        }
+      });
+
+    });
+
+    $('#myModal').on('hidden.bs.modal', function() {
+      $('#contact-thanks').hide();
+      document.getElementById('contact').reset();
+      $('#contact-form').show();
     });
     </script>
 
