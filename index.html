@@ -132,6 +132,7 @@
     <script src="assets/js/ie10-bug-workaround.js"></script>
     <script>
     $(document).ready(function() {
+      //intro effects
       $('#skip').on('click', function() {
         $('#joe-title, #and-title, #ash-title, #request-text, #badge-row').css('opacity', '1.0');
         $(this).hide();
@@ -150,6 +151,70 @@
           });
         });
       });
+
+    //main hover sizing
+
+    function resetSize() {
+      $('.circle-badge-adams-lg, .circle-badge-wallowas-lg, .circle-badge-crested-lg')
+        .animate({
+          width: '33%'
+        }, {
+          duration: 0,
+          queue: false
+        });
+      }
+  if(window.innerWidth > 1000) {
+    $('.circle-badge-crested-lg').hover(
+      function() {
+        $('.circle-badge-adams-lg, .circle-badge-wallowas-lg')
+          .animate({
+            width: '25%'
+          }, {
+            duration: 0,
+            queue: false
+          });
+        $('.circle-badge-crested-lg').animate({
+          width: '40%'
+        }, {
+          duration: 300,
+          queue: false
+        });
+        }, resetSize);
+
+    $('.circle-badge-adams-lg').hover(
+      function() {
+        $('.circle-badge-crested-lg, .circle-badge-wallowas-lg')
+          .animate({
+            width: '25%'
+          }, {
+            duration: 0,
+            queue: false
+          });
+        $('.circle-badge-adams-lg').animate({
+          width: '40%'
+        }, {
+          duration: 300,
+          queue: false
+        });
+        }, resetSize);
+
+    $('.circle-badge-wallowas-lg').hover(
+      function() {
+        $('.circle-badge-adams-lg, .circle-badge-crested-lg')
+          .animate({
+            width: '25%'
+          }, {
+            duration: 0,
+            queue: false
+          });
+        $('.circle-badge-wallowas-lg').animate({
+          width: '40%'
+        }, {
+          duration: 300,
+          queue: false
+        });
+        }, resetSize);
+  }
 
     //contact form submission
     $('#contact').on('submit', function(e) {
