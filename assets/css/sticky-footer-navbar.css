@@ -363,6 +363,10 @@ code {
     display: inline-block;
     padding: 0 10px 0 10px;
   }
+  .badge-row {
+    width: 100%;
+    min-width: 100%;
+  }
   .badge-row a {
     text-decoration: none;
   }
@@ -409,8 +413,9 @@ code {
     background-attachment: fixed;
   }
   .sub-circle-text:hover {
-    color: #ffffff;
     background-color: #C9D787;
+    font-size: 36pt;
+    opacity: 0.8;
   }
   .main-fifty {
     width: 48%;

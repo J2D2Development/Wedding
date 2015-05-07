@@ -153,67 +153,92 @@
       });
 
     //main hover sizing
-
     function resetSize() {
       $('.circle-badge-adams-lg, .circle-badge-wallowas-lg, .circle-badge-crested-lg')
         .animate({
           width: '33%'
         }, {
           duration: 0,
+          easing: 'linear',
           queue: false
         });
       }
+
   if(window.innerWidth > 1000) {
-    $('.circle-badge-crested-lg').hover(
+    $('.circle-badge-crested-lg').mouseover(
       function() {
         $('.circle-badge-adams-lg, .circle-badge-wallowas-lg')
           .animate({
             width: '25%'
           }, {
             duration: 0,
+            easing: 'linear',
             queue: false
           });
         $('.circle-badge-crested-lg').animate({
           width: '40%'
         }, {
           duration: 300,
+          easing: 'linear',
           queue: false
         });
-        }, resetSize);
+      });
+    // , function() {
+    //       if($('.badge-row').not(':hover')) {
+    //         console.log('out of badge row');
+    //         resetSize();
+    //       }
+    //     });
 
-    $('.circle-badge-adams-lg').hover(
+    $('.circle-badge-adams-lg').mouseover(
       function() {
         $('.circle-badge-crested-lg, .circle-badge-wallowas-lg')
           .animate({
             width: '25%'
           }, {
             duration: 0,
+            easing: 'linear',
             queue: false
           });
         $('.circle-badge-adams-lg').animate({
           width: '40%'
         }, {
           duration: 300,
+          easing: 'linear',
           queue: false
         });
-        }, resetSize);
+      });
+    // , function() {
+    //       if($('.badge-row').not(':hover')) {
+    //         console.log('out of badge row');
+    //         resetSize();
+    //       }
+    //     });
 
-    $('.circle-badge-wallowas-lg').hover(
+    $('.circle-badge-wallowas-lg').mouseover(
       function() {
         $('.circle-badge-adams-lg, .circle-badge-crested-lg')
           .animate({
             width: '25%'
           }, {
             duration: 0,
+            easing: 'linear',
             queue: false
           });
         $('.circle-badge-wallowas-lg').animate({
           width: '40%'
         }, {
           duration: 300,
+          easing: 'linear',
           queue: false
         });
-        }, resetSize);
+        });
+    // , function() {
+    //       if($('.badge-row').not(':hover')) {
+    //         console.log('out of badge row');
+    //         resetSize();
+    //       }
+    //     });
   }
 
     //contact form submission
