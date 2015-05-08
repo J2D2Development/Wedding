@@ -22,9 +22,9 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #C9D787;
+  background-color: #f8f8f8;
+  border-top: 1px solid #e7e7e7;
   font-size: 12pt;
-  color: #ffffff;
 }
 
 /*Sticky header styles*/
@@ -86,6 +86,7 @@ code {
 }
 .badge-row a {
   text-decoration: none;
+  color: inherit;
 }
 .circle-badge-crested-lg {
   text-align: center;
@@ -96,14 +97,13 @@ code {
   height: 100%;
   line-height: 100%;
   font-family: 'Tangerine', cursive;
-  font-size: 24pt;
+  font-size: 22pt;
   margin: 5px auto;
   display: block;
-  border-radius: 5px;
-  background-image: url(../images/crestedButteBadgeLG.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  font-weight: bold;
+  padding: 15px 0 15px 0;
+  background-color: #423542;
+  color: #ffffff;
 }
 .circle-badge-vancouver-lg {
   text-align: center;
@@ -112,13 +112,13 @@ code {
   height: 200px;*/
   width: 100%;
   height: 100%;
+  line-height: 100%;
+  font-family: 'Tangerine', cursive;
+  font-size: 22pt;
   margin: 5px auto;
+  font-weight: bold;
+  padding: 15px 0 15px 0;
   display: block;
-  border-radius: 5px;
-  background-image: url(../images/vancouverBadgeLG.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
 }
 .circle-badge-wallowas-lg {
   text-align: center;
@@ -127,13 +127,15 @@ code {
   height: 200px;*/
   width: 100%;
   height: 100%;
+  line-height: 100%;
+  font-family: 'Tangerine', cursive;
+  font-size: 22pt;
   margin: 5px auto;
   display: block;
-  border-radius: 5px;
-  background-image: url(../images/wallowasBadgeLG.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  font-weight: bold;
+  padding: 15px 0 15px 0;
+  background-color: #CFBACE;
+  color: #000000;
 }
 .circle-badge-adams-lg {
   text-align: center;
@@ -142,19 +144,20 @@ code {
   height: 200px;*/
   width: 100%;
   height: 100%;
+  line-height: 100%;
+  font-family: 'Tangerine', cursive;
+  font-size: 22pt;
   margin: 5px auto;
   display: block;
-  border-radius: 5px;
-  background-image: url(../images/adamsBadgeLG.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  font-weight: bold;
+  color: #cccccc;
+  padding: 15px 0 15px 0;
+  background-color: #826882;
 }
 .sub-circle-text {
   text-align: center;
   padding: 15px 0 15px 0;
   font-family: 'Tangerine', cursive;
-  color: #000000;
   font-size: 22pt;
   font-weight: bold;
   line-height: 100%;
@@ -340,6 +343,156 @@ code {
 .skip {
   display: none;
 }
+/*parallax scrolling page*/
+.parallax-container {
+  margin-top: 60px;
+}
+.parallax-caption {
+  background-color: #ffffff;
+  font-size: 18pt;
+  text-align: center;
+  padding: 10px;
+}
+.trans-white {
+  background-color: rgba(255,255,255,0.8);
+}
+.parallax-caption-sub {
+  font-size: 10pt;
+}
+.timberline {
+  width: 100%;
+  height: 100vh;
+  background-color: #cccccc;
+  background-image: url(../images/parallax/timberlineMobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: inset 0 0 1em #111;
+  -webkit-background-size: cover;
+}
+.wallowas {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images//parallax/wallowas01Mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: inset 0 0 1em #111;
+}
+.wallowas-summit {
+  width: 100%;
+  height: 100vh;
+  background-color: #cccccc;
+  background-image: url(../images//parallax/wallowassummitMobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: inset 0 0 1em #111;
+}
+.mtadams {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/parallax/adamsrestingMobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: inset 0 0 1em #111;
+}
+.shadow {
+  width: 100%;
+  height: 100vh;
+  background-color: #cccccc;
+  background-image: url(../images/parallax/thebuswithshadowMobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: inset 0 0 1em #111;
+}
+.pcg {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/parallax/pcgMobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: inset 0 0 1em #111;
+}
+.maine-lobster {
+  width: 100%;
+  height: 100vh;
+  background-color: #cccccc;
+  background-image: url(../images/parallax/joeashmaineMobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: inset 0 0 1em #111;
+}
+.vancouver {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/parallax/vancouverMobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: inset 0 0 1em #111;
+}
+.crested-butte {
+  width: 100%;
+  height: 100vh;
+  background-color: #cccccc;
+  background-image: url(../images/parallax/crestedbutteMobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: inset 0 0 1em #111;
+}
+.trail-falls {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/parallax/trailfallsMobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: inset 0 0 1em #111;
+}
+.pacific-city {
+  width: 100%;
+  height: 100vh;
+  background-color: #cccccc;
+  background-image: url(../images/parallax/pacificcityMobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: inset 0 0 1em #111;
+}
+@media only screen
+and (min-device-width : 300px)
+and (max-device-width : 600px) {
+  .timberline, .wallowas, .wallowas-summit, .mtadams, .shadow, .pcg, .maine-lobster, .vancouver, .crested-butte, .trail-falls, .pacific-city {
+    height: 350px;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+  .parallax-caption {
+    background-color: rgba(255,255,255,0.8);
+    font-size: 14pt;
+    padding: 3px;
+  }
+}
+#backToTop {
+  display: none;
+}
 
 @media (min-width: 768px) {
   .nav-right {
@@ -372,28 +525,54 @@ code {
   }
   .circle-badge-crested-lg {
     width: 33%;
-    /*max-width: 33%;*/
-    height: 200px;
+    height: 225px;
+    font-size: 28pt;
+    line-height: 100%;
     display: inline-block;
+    background-image: url(../images/crestedButteBadgeLG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    transition: all 0.3s ease;
   }
   .circle-badge-vancouver-lg {
     width: 33%;
-    /*max-width: 33%;*/
-    height: 200px;
+    height: 225px;
+    font-size: 28pt;
+    line-height: 100%;
     display: inline-block;
+    background-image: url(../images/vancouverBadgeLG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: all 0.3s ease;
   }
   .circle-badge-wallowas-lg {
     width: 33%;
     /*max-width: 33%;*/
-    height: 200px;
+    height: 225px;
+    font-size: 28pt;
+    line-height: 100%;
+    padding: 0 0.5% 0 0.5%;
     display: inline-block;
+    background-image: url(../images/wallowasBadgeLG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    background-position: center center;
     transition: all 0.3s ease;
   }
   .circle-badge-adams-lg {
     width: 33%;
     /*max-width: 33%;*/
-    height: 200px;
+    height: 225px;
+    font-size: 28pt;
+    line-height: 100%;
     display: inline-block;
+    background-image: url(../images/adamsBadgeLG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     transition: all 0.3s ease;
   }
   .sub-circle-text {
@@ -401,8 +580,9 @@ code {
     display: inline-block;
     font-size: 26pt;
     width: 100%;
+    color: #000000;
     background-color: rgba(255,255,255,0.4);
-    transition: all 0.6s ease;
+    transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
   }
   .flower {
@@ -414,7 +594,6 @@ code {
   }
   .sub-circle-text:hover {
     background-color: #C9D787;
-    font-size: 36pt;
     opacity: 0.8;
   }
   .main-fifty {
@@ -549,5 +728,81 @@ code {
   }
   .skip:hover {
     background-color: #a9a9a9;
+  }
+  /*parallax scrolling page*/
+  .parallax-container {
+    margin-top: 50px;
+  }
+  .parallax-caption {
+    font-size: 26pt;
+    padding: 20px;
+  }
+  .parallax-caption-sub {
+    font-size: 12pt;
+  }
+  .timberline {
+    background-image: url(../images/parallax/timberline.jpg);
+    background-size: contain;
+  }
+  .wallowas {
+    background-image: url(../images//parallax/wallowas01.jpg);
+    background-size: contain;
+  }
+  .wallowas-summit {
+    background-image: url(../images//parallax/wallowassummit.jpg);
+    background-size: contain;
+  }
+  .mtadams {
+    background-image: url(../images/parallax/adamsresting.jpg);
+    background-size: contain;
+  }
+  .shadow {
+    background-image: url(../images/parallax/thebuswithshadow.jpg);
+    background-size: contain;
+  }
+  .pcg {
+    background-image: url(../images/parallax/pcg.jpg);
+    background-size: contain;
+  }
+  .maine-lobster {
+    background-image: url(../images/parallax/joeashmaine.jpg);
+    background-size: contain;
+  }
+  .vancouver {
+    background-image: url(../images/parallax/vancouver.jpg);
+    background-size: contain;
+  }
+  .crested-butte {
+    background-image: url(../images/parallax/crestedbutte.jpg);
+    background-size: contain;
+  }
+  .trail-falls {
+    background-image: url(../images/parallax/trailfalls.jpg);
+    background-size: contain;
+  }
+  .pacific-city {
+    background-image: url(../images/parallax/pacificcity.jpg);
+    background-size: contain;
+  }
+  #backToTop {
+    display: block;
+    float: right;
+    border-radius: 50%;
+    z-index: 99;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    font-size: 15pt;
+    background-color: #000000;
+    color: #ffffff;
+    margin: 10px 25px 0 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+  }
+  #backToTop:hover {
+    background-color: #cccccc;
+    color: #000000;
   }
 }
