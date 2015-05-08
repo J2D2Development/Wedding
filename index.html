@@ -73,7 +73,7 @@
             </div> -->
             Rsvp
           </a>
-          <a class="circle-badge-adams-lg" href="details.html">
+          <a class="circle-badge-timberline-lg" href="details.html">
             <!-- <div class="circle-badge-adams-lg">
                 <div class="sub-circle-text">Details</div>
             </div> -->
@@ -139,42 +139,12 @@
     <script src="assets/js/ie10-bug-workaround.js"></script>
     <script>
     $(document).ready(function() {
-      //intro effects
-      $('#skip').on('click', function() {
-        $('#joe-title, #and-title, #ash-title, #request-text, #badge-row').css('opacity', '1.0');
-        $(this).hide();
-      });
 
-        $('#joe-title').fadeTo(1000, 1.0, function() {
-          $('#and-title').fadeTo(1000, 1.0, function() {
-            $('#ash-title').fadeTo(1000, 1.0, function() {
-              $('#request-text').fadeTo(1500, 1.0, function() {
-                var timer0 = setTimeout(function() {
-                  $('#badge-row').fadeTo(2000, 1.0);
-                  $('.skip').fadeOut(2000);
-                }, 1500);
-              });
-            });
-          });
-        });
-      });
-
-    //main hover sizing
-    // function resetSize() {
-    //   $('.circle-badge-adams-lg, .circle-badge-wallowas-lg, .circle-badge-crested-lg')
-    //     .animate({
-    //       width: '33%'
-    //     }, {
-    //       duration: 0,
-    //       easing: 'linear',
-    //       queue: false
-    //     });
-    //   }
-
+function hoverEffects() {
   if(window.innerWidth > 1000) {
     $('.circle-badge-crested-lg').mouseover(
       function() {
-        $('.circle-badge-adams-lg, .circle-badge-wallowas-lg')
+        $('.circle-badge-timberline-lg, .circle-badge-wallowas-lg')
           .animate({
             width: '25%'
           }, {
@@ -190,14 +160,8 @@
           queue: false
         });
       });
-    // , function() {
-    //       if($('.badge-row').not(':hover')) {
-    //         console.log('out of badge row');
-    //         resetSize();
-    //       }
-    //     });
 
-    $('.circle-badge-adams-lg').mouseover(
+    $('.circle-badge-timberline-lg').mouseover(
       function() {
         $('.circle-badge-crested-lg, .circle-badge-wallowas-lg')
           .animate({
@@ -207,7 +171,7 @@
             easing: 'linear',
             queue: false
           });
-        $('.circle-badge-adams-lg').animate({
+        $('.circle-badge-timberline-lg').animate({
           width: '40%'
         }, {
           duration: 300,
@@ -215,16 +179,10 @@
           queue: false
         });
       });
-    // , function() {
-    //       if($('.badge-row').not(':hover')) {
-    //         console.log('out of badge row');
-    //         resetSize();
-    //       }
-    //     });
 
     $('.circle-badge-wallowas-lg').mouseover(
       function() {
-        $('.circle-badge-adams-lg, .circle-badge-crested-lg')
+        $('.circle-badge-timberline-lg, .circle-badge-crested-lg')
           .animate({
             width: '25%'
           }, {
@@ -239,14 +197,89 @@
           easing: 'linear',
           queue: false
         });
-        });
-    // , function() {
-    //       if($('.badge-row').not(':hover')) {
-    //         console.log('out of badge row');
-    //         resetSize();
-    //       }
-    //     });
+      });
   }
+}
+      //intro effects
+      $('#skip').on('click', function() {
+        $('#joe-title, #and-title, #ash-title, #request-text, #badge-row').css('opacity', '1.0');
+        hoverEffects();
+        $(this).hide();
+      });
+
+        $('#joe-title').fadeTo(1000, 1.0, function() {
+          $('#and-title').fadeTo(1000, 1.0, function() {
+            $('#ash-title').fadeTo(1000, 1.0, function() {
+              $('#request-text').fadeTo(1500, 1.0, function() {
+                var timer0 = setTimeout(function() {
+                  $('#badge-row').fadeTo(2000, 1.0);
+                  $('.skip').fadeOut(2000);
+                }, 1500)
+                var timer1 = setTimeout(hoverEffects, 1600);
+              });
+            });
+          });
+        });
+      });
+
+  // if(window.innerWidth > 1000) {
+  //   $('.circle-badge-crested-lg').mouseover(
+  //     function() {
+  //       $('.circle-badge-timberline-lg, .circle-badge-wallowas-lg')
+  //         .animate({
+  //           width: '25%'
+  //         }, {
+  //           duration: 100,
+  //           easing: 'linear',
+  //           queue: false
+  //         });
+  //       $('.circle-badge-crested-lg').animate({
+  //         width: '40%'
+  //       }, {
+  //         duration: 300,
+  //         easing: 'linear',
+  //         queue: false
+  //       });
+  //     });
+
+  //   $('.circle-badge-timberline-lg').mouseover(
+  //     function() {
+  //       $('.circle-badge-crested-lg, .circle-badge-wallowas-lg')
+  //         .animate({
+  //           width: '25%'
+  //         }, {
+  //           duration: 100,
+  //           easing: 'linear',
+  //           queue: false
+  //         });
+  //       $('.circle-badge-timberline-lg').animate({
+  //         width: '40%'
+  //       }, {
+  //         duration: 300,
+  //         easing: 'linear',
+  //         queue: false
+  //       });
+  //     });
+
+  //   $('.circle-badge-wallowas-lg').mouseover(
+  //     function() {
+  //       $('.circle-badge-timberline-lg, .circle-badge-crested-lg')
+  //         .animate({
+  //           width: '25%'
+  //         }, {
+  //           duration: 100,
+  //           easing: 'linear',
+  //           queue: false
+  //         });
+  //       $('.circle-badge-wallowas-lg').animate({
+  //         width: '40%'
+  //       }, {
+  //         duration: 300,
+  //         easing: 'linear',
+  //         queue: false
+  //       });
+  //       });
+  // }
 
     //contact form submission
     $('#contact').on('submit', function(e) {
