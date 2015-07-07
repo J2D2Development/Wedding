@@ -22,7 +22,8 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #f8f8f8;
+  background-color: #E5B8E5;
+  background: linear-gradient(#E5B8E5, #FFCDFF);
   border-top: 1px solid #e7e7e7;
   font-size: 12pt;
 }
@@ -63,11 +64,28 @@ code {
 }
 .page-header h1 {
   font-size: 18pt;
-  margin-top: -15px;
+  margin-top: -35px;
 }
 .main-name {
   display: block;
   margin-top: -10px;
+}
+.purple-gradient {
+  background-color: #E5B8E5;
+  background: linear-gradient(#E5B8E5, #FFCDFF);
+}
+.mt-adams-bg {
+  background-image: url(../images/topofadams.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.full-width {
+  padding: 0;
+  margin-top: 10px;
+}
+.side-margins {
+  padding: 0 15px 0 15px;
 }
 
 /*circle image badges*/
@@ -170,8 +188,13 @@ code {
 }
 .main-fifty {
   display: block;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   text-align: left;
+}
+.main-fifty h3 {
+  background-color: rgba(0,0,0,0.1);
+  padding: 5px;
+  color: #000000;
 }
 #contact {
 }
@@ -522,6 +545,9 @@ and (max-device-width : 600px) {
   .navbar-brand {
     font-size: 18pt;
   }
+  img {
+    max-width: 100%;
+  }
 }
 @media only screen
 and (min-device-width : 601px)
@@ -557,6 +583,10 @@ and (max-device-width : 1024px) {
   .page-header h1 {
     font-size: 22pt;
     margin-top: -15px;
+  }
+  .full-width {
+    padding: 0;
+    margin-top: 30px;
   }
   .vertshrink {
     margin-top: -20px;
@@ -673,15 +703,15 @@ and (max-device-width : 1024px) {
     opacity: 0.8;
   }
   .main-fifty {
-    width: 48%;
-    max-width: 48%;
+    width: 47%;
+    max-width: 47%;
     display: inline-block;
     vertical-align: top;
   }
   .main-clear {
     display: inline-block;
-    width: 2%;
-    min-width: 2%;
+    width: 5%;
+    min-width: 5%;
   }
   .main-row {
     width: 100%;

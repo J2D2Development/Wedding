@@ -4,40 +4,12 @@
 		"selected_items":
 		[
 			[
-				"back",
-				"background-color"
+				"get",
+				"getElementsByClassName"
 			],
 			[
-				"ba",
-				"background-size"
-			],
-			[
-				"backgroun",
-				"background-color"
-			],
-			[
-				"tab",
-				"table-cell"
-			],
-			[
-				"mar",
-				"margin-bottom"
-			],
-			[
-				"backgrou",
-				"background-color"
-			],
-			[
-				"text",
-				"text-align"
-			],
-			[
-				"fon",
-				"font-size"
-			],
-			[
-				"backg",
-				"background-attachment"
+				"horiz",
+				"horiz-align-wrapper"
 			],
 			[
 				"font",
@@ -116,10 +88,6 @@
 				"passwordDefault"
 			],
 			[
-				"get",
-				"getElementById"
-			],
-			[
 				"userNotic",
 				"userNoticeSuccess"
 			],
@@ -128,7 +96,15 @@
 				"innerHTML"
 			],
 			[
+				"fon",
+				"font-weight"
+			],
+			[
 				"te",
+				"text-decoration"
+			],
+			[
+				"text",
 				"text-decoration"
 			],
 			[
@@ -172,6 +148,10 @@
 				"font-style"
 			],
 			[
+				"ba",
+				"background-color"
+			],
+			[
 				"op",
 				"option	Tag"
 			],
@@ -208,8 +188,16 @@
 				"visibility"
 			],
 			[
+				"mar",
+				"margin-left"
+			],
+			[
 				"s",
 				"style	Attr"
+			],
+			[
+				"back",
+				"background-color"
 			],
 			[
 				"text-",
@@ -234,6 +222,10 @@
 			[
 				"bac",
 				"background-attachment"
+			],
+			[
+				"backg",
+				"background-image"
 			],
 			[
 				"max",
@@ -412,10 +404,26 @@
 	"buffers":
 	[
 		{
-			"file": "travels.html",
+			"file": "news.html",
 			"settings":
 			{
-				"buffer_size": 8838,
+				"buffer_size": 12089,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "guestbook.html",
+			"settings":
+			{
+				"buffer_size": 8712,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "rsvp.html",
+			"settings":
+			{
+				"buffer_size": 12664,
 				"line_ending": "Windows"
 			}
 		},
@@ -423,23 +431,7 @@
 			"file": "assets/css/sticky-footer-navbar.css",
 			"settings":
 			{
-				"buffer_size": 18120,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "index.html",
-			"settings":
-			{
-				"buffer_size": 10819,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "details.html",
-			"settings":
-			{
-				"buffer_size": 9809,
+				"buffer_size": 19615,
 				"line_ending": "Windows"
 			}
 		},
@@ -447,8 +439,32 @@
 			"file": "assets/css/bootstrap.css",
 			"settings":
 			{
-				"buffer_size": 141867,
+				"buffer_size": 141873,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "details.html",
+			"settings":
+			{
+				"buffer_size": 9952,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 10835,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "travels.html",
+			"settings":
+			{
+				"buffer_size": 9392,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -468,7 +484,7 @@
 	},
 	"console":
 	{
-		"height": 0.0,
+		"height": 180.0,
 		"history":
 		[
 		]
@@ -485,12 +501,40 @@
 	"file_history":
 	[
 		"/C/Users/joedriscoll79/Documents/2011passwords.txt",
-		"/C/xampp/htdocs/Wedding/contactus.php",
-		"/C/xampp/htdocs/Wedding/ignore/hosts",
-		"/C/xampp/htdocs/ubuntu centOS server notes.txt",
-		"/C/xampp/htdocs/Wedding/ignore/hosts.redhat.tmpl",
-		"/C/xampp/htdocs/Wedding/ignore/hostname",
-		"/C/xampp/htdocs/Wedding/home.html",
+		"/C/xampp/htdocs/NordEnterprises/docs.inc",
+		"/C/xampp/htdocs/NordEnterprises/cp/labels.inc",
+		"/C/Users/joedriscoll79/Documents/Nord Enterprises/Custcare-Director/New Live Sites Info/Report Process Files/2015-07/2015-07sitechanges",
+		"/C/xampp/htdocs/NordEnterprises/Update Notes/futureprojects.txt",
+		"/C/xampp/htdocs/reactjs_koans/koans/es6/01-HelloWorld.jsx",
+		"/C/xampp/htdocs/reactjs_koans/exercises/.gitkeep",
+		"/C/xampp/htdocs/jsPractice/flattenArrays.js",
+		"/C/xampp/htdocs/jsPractice/flattenArrays.html",
+		"/C/xampp/htdocs/NordEnterprises/pagemenu.inc",
+		"/C/xampp/htdocs/NordEnterprises/feature_menu_items.inc",
+		"/C/xampp/htdocs/NordEnterprises/Update Notes/devLog.txt",
+		"/C/xampp/htdocs/NordEnterprises/cp/upload_mediafile.inc",
+		"/C/xampp/htdocs/NordEnterprises/cp/upload_mediafile.html",
+		"/C/xampp/htdocs/jsPractice/good-parts-q1-5.js",
+		"/C/xampp/htdocs/NordEnterprises/bootstrap-3.3.4-dist/css/bootstrap.css",
+		"/C/xampp/htdocs/NordEnterprises/NordHelpSite/survey-panels.html",
+		"/C/xampp/htdocs/NordEnterprises/NordHelpSite/helpSurveys.php",
+		"/C/Users/joedriscoll79/Documents/Nord Enterprises/SE Region/Reserve at Belmere/2015-06-07emailForwards",
+		"/C/xampp/htdocs/NordEnterprises/feature.html",
+		"/C/xampp/htdocs/NordEnterprises/classifieds.inc",
+		"/C/xampp/htdocs/NordEnterprises/services.inc",
+		"/C/xampp/htdocs/NordEnterprises/utils_files.inc",
+		"/C/xampp/htdocs/NordEnterprises/constants.inc",
+		"/C/xampp/htdocs/NordEnterprises/cp/constants.inc",
+		"/C/xampp/htdocs/NordEnterprises/ckeditor/config.js",
+		"/C/Users/joedriscoll79/Documents/Nord Enterprises/Custcare-Director/New Live Sites Info/Report Process Files/2015-06sitechanges",
+		"/C/xampp/htdocs/NordEnterprises/utilities.inc",
+		"/C/xampp/htdocs/NordEnterprises/Temp/style_main.inc",
+		"/C/xampp/htdocs/NordEnterprises/style_main.inc",
+		"/C/Users/joedriscoll79/Documents/Nord Enterprises/Custcare-Director/New Live Sites Info/Report Process Files/2015-05/2015-05-01sitechanges.txt",
+		"/C/xampp/htdocs/NordEnterprises/directory.php",
+		"/C/xampp/htdocs/NordEnterprises/robots.txt",
+		"/C/Users/joedriscoll79/Desktop/combined.reg.txt",
+		"/C/xampp/htdocs/NordEnterprises/logo.inc",
 		"/C/xampp/htdocs/NordEnterprises/Backup Files/2015-05userUpgradeBACKUP/page.html",
 		"/C/xampp/htdocs/NordEnterprises/page.html",
 		"/C/xampp/htdocs/NordEnterprises/Temp/feature.html",
@@ -504,15 +548,11 @@
 		"/C/xampp/htdocs/Wedding/ignore/welcome.conf",
 		"/C/xampp/htdocs/Wedding/contact.html",
 		"/C/xampp/htdocs/Wedding/ignore/sendmail",
-		"/C/xampp/htdocs/NordEnterprises/bootstrap-3.3.4-dist/css/bootstrap.css",
-		"/C/xampp/htdocs/NordEnterprises/Update Notes/futureprojects.txt",
 		"/C/xampp/htdocs/NordEnterprises/cp/publish.inc",
-		"/C/xampp/htdocs/NordEnterprises/Update Notes/devLog.txt",
 		"/C/xampp/htdocs/NordEnterprises/cp/status.php",
 		"/C/xampp/htdocs/NordEnterprises/cp/editpage.php",
 		"/C/xampp/htdocs/NordEnterprises/cp/editballotitem.php",
 		"/C/xampp/htdocs/NordEnterprises/header.inc",
-		"/C/xampp/htdocs/NordEnterprises/feature.html",
 		"/C/xampp/htdocs/NordEnterprises/cp/upload.inc",
 		"/C/xampp/htdocs/NordEnterprises/cp/style_main_cp.inc",
 		"/C/xampp/htdocs/NordEnterprises/scripts/overlib.js",
@@ -539,7 +579,6 @@
 		"/C/xampp/htdocs/Wedding/.gitignore",
 		"/C/xampp/htdocs/Wedding/db_connect.php",
 		"/C/xampp/htdocs/NordEnterprises/cp/editrkrec.inc",
-		"/C/xampp/htdocs/NordEnterprises/style_main.inc",
 		"/C/xampp/htdocs/NordEnterprises/gc_footer.php",
 		"/C/xampp/htdocs/NordEnterprises/reqforms.php",
 		"/C/xampp/htdocs/NordEnterprises/contact_results.inc",
@@ -560,6 +599,7 @@
 		"/C/xampp/htdocs/Wedding/comment-panels.html",
 		"/C/xampp/php/php.ini",
 		"/C/xampp/htdocs/Wedding/assets/js/angular.min.js",
+		"/C/xampp/htdocs/Wedding/contactus.php",
 		"/C/xampp/htdocs/Wedding/ignore/php.ini",
 		"/C/xampp/htdocs/Wedding/assets/css/cover.css",
 		"/C/xampp/htdocs/Wedding/js/ie10-bug-workaround.js",
@@ -587,31 +627,7 @@
 		"/C/xampp/htdocs/NordDev/manage.html",
 		"/C/xampp/htdocs/NordDev/ckeditor/plugins/link/dialogs/link.js",
 		"/C/xampp/htdocs/NordDev/cp/pages_retrieve.php",
-		"/C/xampp/htdocs/NordDev/cp/features_retrieve.php",
-		"/C/xampp/htdocs/NordDev/pages_retrieve.php",
-		"/C/xampp/htdocs/NordDev/features_retrieve.php",
-		"/C/xampp/htdocs/NordDev/ckeditor/plugins/link/dialogs/pages_retrieve.php",
-		"/C/xampp/htdocs/NordDev/feature.html",
-		"/C/xampp/htdocs/NordDev/cp/status.php",
-		"/C/xampp/htdocs/NordDev/Update Notes/2015-03-02possibleMemoryLeak.txt",
-		"/C/xampp/htdocs/NordDev/cp/cpheader.php",
-		"/C/xampp/htdocs/NordDev/cp/general.php",
-		"/C/xampp/htdocs/NordDev/cp/mng_fac.php",
-		"/C/xampp/htdocs/NordDev/cp/editevents.inc",
-		"/C/xampp/htdocs/NordDev/cp/cppage.html",
-		"/C/xampp/htdocs/NordDev/cp/editpayment.php",
-		"/C/xampp/htdocs/NordDev/cp/editmediafiles.inc",
-		"/C/xampp/htdocs/NordDev/cp/editphotoalbums.php",
-		"/C/xampp/htdocs/NordDev/cp/editpics.inc",
-		"/C/xampp/htdocs/NordDev/cp/editreqforms.php",
-		"/C/xampp/htdocs/NordDev/cp/editmbs.inc",
-		"/C/xampp/htdocs/NordDev/cp/editdir.php",
-		"/C/xampp/htdocs/NordDev/cp/editrk.inc",
-		"/C/xampp/htdocs/NordDev/cp/editballots.php",
-		"/C/xampp/htdocs/NordDev/cp/editservices.inc",
-		"/C/xampp/htdocs/NordDev/cp/editassocgov.inc",
-		"/C/xampp/htdocs/NordDev/cp/editresvtns.php",
-		"/C/xampp/htdocs/NordDev/scripts/ckeditorAdmin.js"
+		"/C/xampp/htdocs/NordDev/cp/features_retrieve.php"
 	],
 	"find":
 	{
@@ -629,13 +645,84 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"navbar-brand",
-			"hover",
-			"navbar-fixed-top",
-			"sub-circle-text",
-			"adams-lg",
-			"wallowas-lg",
-			"vancouver-lg",
+			"container-fluid",
+			"page-header",
+			"main-fif",
+			"media",
+			"main-fif",
+			"footer",
+			"navbar-nav >",
+			"navbar-nav > a",
+			"navbar-nav",
+			"navbar",
+			"main-fif",
+			"main-fifty",
+			"main",
+			"facebook",
+			"content_font",
+			"!!!",
+			"facebook",
+			"textarea",
+			"hoa_look",
+			"<form",
+			"category",
+			"horizontal",
+			"DOC",
+			"submit",
+			"manage",
+			"submit",
+			".mp3",
+			"the file you chose",
+			"navbar",
+			"@",
+			"item text",
+			"x",
+			"mobile",
+			"$feature_id",
+			"$sitefeature",
+			"mobile",
+			"feature_menu_items",
+			"mobile",
+			"$feature_id",
+			"feature_id",
+			"mobile",
+			"$sitefeature",
+			"mobile",
+			"navbar-collapse ",
+			"navbar-header",
+			"navbar-toggle",
+			"menu",
+			"navbar-nav",
+			"li",
+			"navbar-collapse",
+			".navbar-right",
+			"nord-nav",
+			"classif",
+			"date",
+			"captcha",
+			"capthca",
+			"captcha",
+			"mobile",
+			"hoa_page",
+			"$hoa_page",
+			"hoa_page",
+			"$us_mode",
+			"Menu_items",
+			"horizontal_menu",
+			"action_url",
+			"pagemenu",
+			"$menu_items",
+			"menu_item_color",
+			"menu_item",
+			"input",
+			"form",
+			"facebook",
+			"navbar-default",
+			"logo",
+			"facebook",
+			"face",
+			"facebook",
+			"toTop",
 			"facebook",
 			"dirHeader",
 			"facebook",
@@ -685,78 +772,7 @@
 			"photo album",
 			"19",
 			"panel-title",
-			"mail",
-			"pull-left",
-			"muted",
-			"navbar-nav",
-			"open",
-			"navbar-nav",
-			"btn-danger",
-			"navbar-nav",
-			"alert-dan",
-			"button",
-			"form",
-			"container",
-			"navbar-header",
-			"navbar-fixed-top",
-			"navbar-brand",
-			"navbar-collapse",
-			"clearfix",
-			"php",
-			"hoa_main",
-			"driver",
-			"send message",
-			"unset",
-			"$driver",
-			"create",
-			"300",
-			"validate_doc",
-			"Icomments",
-			"validate_doc",
-			"form",
-			"file?",
-			"#upload",
-			"selected",
-			"selecteed",
-			"multiDeleteFiles",
-			"multiDele",
-			"form",
-			"file?",
-			"validate",
-			"submit",
-			"file?",
-			"selected",
-			"user uplo",
-			"Delete Selec",
-			"delete selec",
-			"delete",
-			"create",
-			"transition",
-			"Title:",
-			"properties",
-			"Enter the",
-			"enter the",
-			"title",
-			"wysiwyg",
-			"only display",
-			"only display editor",
-			"file",
-			"status",
-			"upload a new",
-			"uploaded documents",
-			"upload a new",
-			"delete selec",
-			"upload a new ",
-			"manage",
-			"delete",
-			"DOCUMENTS",
-			"$edit_url",
-			"editnew",
-			"unset",
-			"unset(",
-			"$",
-			"gcff",
-			"requestor"
+			"mail"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -764,6 +780,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"",
 			"createLink",
 			"directorypanel",
 			"adpanel",
@@ -782,24 +799,24 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "travels.html",
+					"file": "news.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8838,
+						"buffer_size": 12089,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3927,
-								3927
+								2828,
+								2828
 							]
 						],
 						"settings":
@@ -809,27 +826,87 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 891.0,
+						"translation.y": 1020.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "assets/css/sticky-footer-navbar.css",
+					"file": "guestbook.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 18120,
+						"buffer_size": 8712,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1647,
-								1617
+								1079,
+								1079
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 330.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "rsvp.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12664,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1075,
+								1075
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 198.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "assets/css/sticky-footer-navbar.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 19615,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1429,
+								1429
 							]
 						],
 						"settings":
@@ -839,70 +916,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1742.0,
+						"translation.y": 1415.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 10819,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								8313,
-								8313
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 4994.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "details.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 9809,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6087,
-								6087
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 3344.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -911,15 +928,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 141867,
+						"buffer_size": 141873,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								82234,
-								82246
+								26169,
+								26125
 							]
 						],
 						"settings":
@@ -929,10 +946,100 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 91857.0,
+						"translation.y": 34613.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "details.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9952,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2244,
+								2244
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 858.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 10835,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1093,
+								1093
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 198.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "travels.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9392,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1037,
+								1037
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 462.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
 					"type": "text"
 				}
 			]
@@ -1015,7 +1122,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 150.0,
+	"side_bar_width": 224.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
