@@ -407,7 +407,7 @@
 			"file": "news.html",
 			"settings":
 			{
-				"buffer_size": 12089,
+				"buffer_size": 12286,
 				"line_ending": "Windows"
 			}
 		},
@@ -799,7 +799,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -808,15 +808,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 12089,
+						"buffer_size": 12286,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2828,
-								2828
+								6838,
+								6838
 							]
 						],
 						"settings":
@@ -826,10 +826,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1020.0,
+						"translation.y": 2779.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -976,10 +976,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 858.0,
+						"translation.y": 792.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
