@@ -1,3 +1,4 @@
 #gitignore: wedding site
 ignore/*
 db_connect.php
+httpd.conf

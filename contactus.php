@@ -4,6 +4,14 @@
 $msg = $_POST['message'];
 $name = $_POST['name'];
 $from_email = $_POST['email'];
+$spammy = isset($_POST['confirm']); //spam honeypot
+
+if($spammy) {
+    //this is spam, fake confirmation and return
+    print "Thanks for contacting us!<br />";
+    print "Someone will be in touch soon to address your concerns  This pop up will close momentarily, or click anwhere outside it to close.";
+    return;
+}
 
 $to = "joedriscoll79@gmail.com";
 $from = "questions@driscollwedding.com";

@@ -920,3 +920,13 @@ and (max-device-width : 1024px) {
     color: #000000;
   }
 }
+
+/*form validations*/
+.input-confirm {
+  position: relative;
+  overflow: hidden;
+}
+.input-confirm label, .input-confirm input {
+  position: absolute;
+  left: -150%;
+}
