@@ -1,7 +1,4 @@
 <?php
-//local connection
-//$con = mysqli_connect('localhost', 'root', 'jcd2829', 'wedding');
-//production database
 include_once "db_connect.php";
 
 $result = mysqli_query($con, "SELECT * FROM comments ORDER BY created_on DESC");
