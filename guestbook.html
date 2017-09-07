@@ -67,12 +67,14 @@
               <h1 class="panel-title">Add a Comment</h1>
             </div>
             <br />
-              <form id="comment" method="post" enctype="multipart/form-data" name="comment" target="_self" onsubmit="" action="submitcomment.php">
-                <input type="text" id="name" name="name" placeholder="Name" required></input>
-                <input type="email" id="email" name="email" placeholder="Email"></input>
-                <textarea id="message" name="message" placeholder="Enter your message for the happy couple" required></textarea>
-                <input class="btn btn-primary" type="submit" id="submit-comment" name="submit-comment" value="Submit"></input>
-                <input class="btn btn-danger" type="reset" id="reset-comment" name="reset-comment" value="Reset">
+              <em>No longer accepting comments- sorry!</em>
+              <form id="comment" method="post" enctype="multipart/form-data" name="comment" target="_self" onsubmit="">
+                <!-- action="submitcomment.php" -->
+                <input type="text" id="name" name="name" placeholder="Name" required disabled></input>
+                <input type="email" id="email" name="email" placeholder="Email" disabled></input>
+                <textarea id="message" name="message" placeholder="Enter your message for the happy couple" required disabled></textarea>
+                <input class="btn btn-primary" type="submit" id="submit-comment" name="submit-comment" value="Submit" disabled></input>
+                <input class="btn btn-danger" type="reset" id="reset-comment" name="reset-comment" value="Reset" disabled>
               </form>
           </div>
         </div>
@@ -170,35 +172,36 @@
     <script src = "./assets/js/contact-handler.js"></script>
 
     <script>
-    $(document).ready(function() {
+    //no longer accepting comments
+    // $(document).ready(function() {
 
-      $('#comment').on('submit', function() {
-        $.post(
-            $(this).attr('action'),
-            $(this).serialize(),
-            function(response) {
-            },
-            'json'
-        );
-        var timer = setTimeout(reloadComments, 2000);
-        $('#comment-panel').fadeOut(500, function() {
-          $('#comment-thanks').fadeIn(500);
-        });
-        return false;
-      });
+    //   $('#comment').on('submit', function() {
+    //     $.post(
+    //         $(this).attr('action'),
+    //         $(this).serialize(),
+    //         function(response) {
+    //         },
+    //         'json'
+    //     );
+    //     var timer = setTimeout(reloadComments, 2000);
+    //     $('#comment-panel').fadeOut(500, function() {
+    //       $('#comment-thanks').fadeIn(500);
+    //     });
+    //     return false;
+    //   });
 
-      //function to reload blog entries after submission
-      function reloadComments() {
-        $.ajax({
-          type: 'GET',
-          cache: false,
-          url: 'reloadcomments.php',
-          success: function(data) {
-            $('.existing-comments').html(data);;
-          }
-        });
-      }
-    });
+    //   //function to reload blog entries after submission
+    //   function reloadComments() {
+    //     $.ajax({
+    //       type: 'GET',
+    //       cache: false,
+    //       url: 'reloadcomments.php',
+    //       success: function(data) {
+    //         $('.existing-comments').html(data);;
+    //       }
+    //     });
+    //   }
+    // });
     </script>
 
   </body>
